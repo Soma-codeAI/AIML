@@ -30,3 +30,10 @@ Deploy an event-driven audio summarizer that runs as new audio files are uploade
 **Lesson 3:**
 - Enable Logging
 
+**Lesson 4:**
+- Deploy an AWS Lambda function
+  - Setup -> Import packages and Helper Functions
+  - Build the Prompt template
+  - Create the Lambda function -> Lambda handler, Extract transcript from text and summarizaton using bedrock
+  - Deploy the Lambda function
+  - Perform some testing
