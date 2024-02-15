@@ -38,3 +38,7 @@ Deploy an event-driven audio summarizer that runs as new audio files are uploade
   - Create the Lambda function -> Lambda handler, Extract transcript from text and summarizaton using bedrock
   - Deploy the Lambda function
   - Perform some testing
+
+**Lesson 5:**
+- Event Driven Generation
+  - 
