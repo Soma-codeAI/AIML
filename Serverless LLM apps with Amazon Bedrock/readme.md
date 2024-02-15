@@ -16,16 +16,17 @@ Deploy an event-driven audio summarizer that runs as new audio files are uploade
  - Your first generation with Amazon Bedrock
    
 **Lesson 2:**
-- Import necessary Packages
-- Setup S3 client and Transcribe Client
-- Upload audio file to S3
-- Create the unique job name
-- Build the transcription response
-- Access the needed parts of the transcript
-- Setup Bedrock runtime
-- Create the Prompt Template
-- Configure the model response
-- Generate a summary of the audio transcript.
+- Summarize an Audio file
+  - Import necessary Packages
+  - Setup S3 client and Transcribe Client
+  - Upload audio file to S3
+  - Create the unique job name
+  - Build the transcription response
+  - Access the needed parts of the transcript
+  - Setup Bedrock runtime
+  - Create the Prompt Template
+  - Configure the model response
+  - Generate a summary of the audio transcript.
 
 **Lesson 3:**
 - Enable Logging
