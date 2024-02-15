@@ -42,3 +42,8 @@ Deploy an event-driven audio summarizer that runs as new audio files are uploade
 **Lesson 5:**
 - Event Driven Generation
   - 
+
+**Reference**
+- [AWS Generative AI](https://community.aws/generative-ai)
+- [AWS Generative AI Code Samples](https://community.aws/code/generative-ai)
+
