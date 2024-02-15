@@ -12,8 +12,10 @@ Deploy an event-driven audio summarizer that runs as new audio files are uploade
 
 [Link for the Course](https://www.deeplearning.ai/short-courses/serverless-llm-apps-amazon-bedrock/)
 
-Lesson 1: 
-Lesson 2:
+**Lesson 1:**
+ - Your first generation with Amazon Bedrock
+   
+**Lesson 2:**
 - Import necessary Packages
 - Setup S3 client and Transcribe Client
 - Upload audio file to S3
@@ -24,4 +26,7 @@ Lesson 2:
 - Create the Prompt Template
 - Configure the model response
 - Generate a summary of the audio transcript.
+
+**Lesson 3:**
+- Enable Logging
 
