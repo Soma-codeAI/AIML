@@ -20,3 +20,4 @@ Go beyond the chat box. Use API access to leverage LLMs into your own applicatio
 - In this lesson, you will infer sentiment and topics from product reviews and news articles.
 
 **Lesson 6**: Transforming 
+- We will explore how to use Large Language Models for text transformation tasks such as language translation, spelling and grammar checking, tone adjustment, and format conversion.
