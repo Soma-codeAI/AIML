@@ -50,10 +50,13 @@ Anyone who wants to get started building AI applications quickly and easily usin
 
 - Object Detection - DETR (End-to-End Object Detection) model with ResNet-50 backbone [facebook/detr-resnet-50](https://huggingface.co/facebook/detr-resnet-50)
 - Segmentation - Zigeng/SlimSAM-uniform-77 [Zigeng/SlimSAM-uniform-77](https://huggingface.co/Zigeng/SlimSAM-uniform-77)
+- Depth Estimation - DPT-Hybrid (also known as MiDaS 3.0) [Intel/dpt-hybrid-midas](https://huggingface.co/Intel/dpt-hybrid-midas)
 
 #### Websites / Papers Referenced: 
 
 - [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)
 - [Gradio](https://www.gradio.app/)
 - [Segment Anything](https://segment-anything.com/)
+- [isl-org/DPT](https://github.com/isl-org/DPT)
+- [Vision Transformers for Dense Prediction](https://arxiv.org/abs/2103.13413) 
 
