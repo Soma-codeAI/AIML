@@ -49,10 +49,11 @@ Anyone who wants to get started building AI applications quickly and easily usin
 ### Computer Vision 
 
 - Object Detection - DETR (End-to-End Object Detection) model with ResNet-50 backbone [facebook/detr-resnet-50](https://huggingface.co/facebook/detr-resnet-50)
+- Segmentation - Zigeng/SlimSAM-uniform-77 [Zigeng/SlimSAM-uniform-77](https://huggingface.co/Zigeng/SlimSAM-uniform-77)
 
 #### Websites / Papers Referenced: 
 
 - [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)
 - [Gradio](https://www.gradio.app/)
-
+- [Segment Anything](https://segment-anything.com/)
 
