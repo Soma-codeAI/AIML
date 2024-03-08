@@ -68,3 +68,6 @@ Anyone who wants to get started building AI applications quickly and easily usin
 - [Vision Transformers for Dense Prediction](https://arxiv.org/abs/2103.13413)
 - [ZeroGPU Explorers](https://huggingface.co/zero-gpu-explorers): A place to spin free GPUs on demand for your spaces. 
 
+## My learning /Notes
+
+Able to understand Hugging Face Spaces, building quick demos using Gradio, different set of open source models based on their use case and how can you combine and build ML pipelines. 
