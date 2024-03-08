@@ -28,10 +28,16 @@ The course will provide you with the building blocks that you can combine into a
 Anyone who wants to get started building AI applications quickly and easily using open source models.
 
 
-Acronyms 
+## Acronyms 
 - PET - Parameter Efficient training
 - TRL - Transformer Reinforcement Learning
 - Transformers and Accelerate Library 
 
+## References
 
-TRL - Transformer Rein
+### NLP Models
+- Conversational - blenderbot (facebook/blenderbot-400M-distill)[https://huggingface.co/facebook/blenderbot-400M-distill]
+- Translaction - No Language Left Behind Model [facebook/nllb-200-distilled-600M](https://huggingface.co/facebook/nllb-200-distilled-600M)
+- Summarization - BART (large-sized model), fine-tuned on CNN Daily Mail [facebook/bart-large-cnn](https://huggingface.co/facebook/bart-large-cnn)
+- Sentence Similarity - sentence-transformers [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
+
