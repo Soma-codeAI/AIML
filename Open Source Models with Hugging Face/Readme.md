@@ -55,6 +55,7 @@ Anyone who wants to get started building AI applications quickly and easily usin
 ### Multi-Modal
 
 - Image-text-matching - BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation [Salesforce/blip-itm-base-coco](https://huggingface.co/Salesforce/blip-itm-base-coco)
+- Image Captioning - BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation [Salesforce/blip-image-captioning-base](https://huggingface.co/Salesforce/blip-image-captioning-base)
 
 
 #### Websites / Papers Referenced: 
