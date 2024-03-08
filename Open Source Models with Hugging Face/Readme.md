@@ -41,3 +41,7 @@ Anyone who wants to get started building AI applications quickly and easily usin
 - Summarization - BART (large-sized model), fine-tuned on CNN Daily Mail [facebook/bart-large-cnn](https://huggingface.co/facebook/bart-large-cnn)
 - Sentence Similarity - sentence-transformers [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 
+### Audio Models
+- Zero Shot Audio Classification(Feature Extraction) - CLAP: Contrastive Language-Audio Pretraining[laion/clap-htsat-unfused](https://huggingface.co/laion/clap-htsat-unfused)
+- Automatic Speech Recognition - Distil-Whisper: distil-small.en [distil-whisper/distil-small.en](https://huggingface.co/distil-whisper/distil-small.en)
+- 
