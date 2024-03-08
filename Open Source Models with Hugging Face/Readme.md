@@ -52,6 +52,11 @@ Anyone who wants to get started building AI applications quickly and easily usin
 - Segmentation - Zigeng/SlimSAM-uniform-77 [Zigeng/SlimSAM-uniform-77](https://huggingface.co/Zigeng/SlimSAM-uniform-77)
 - Depth Estimation - DPT-Hybrid (also known as MiDaS 3.0) [Intel/dpt-hybrid-midas](https://huggingface.co/Intel/dpt-hybrid-midas)
 
+### Multi-Modal
+
+- Image-text-matching - BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation [Salesforce/blip-itm-base-coco](https://huggingface.co/Salesforce/blip-itm-base-coco)
+
+
 #### Websites / Papers Referenced: 
 
 - [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)
