@@ -44,4 +44,15 @@ Anyone who wants to get started building AI applications quickly and easily usin
 ### Audio Models
 - Zero Shot Audio Classification(Feature Extraction) - CLAP: Contrastive Language-Audio Pretraining[laion/clap-htsat-unfused](https://huggingface.co/laion/clap-htsat-unfused)
 - Automatic Speech Recognition - Distil-Whisper: distil-small.en [distil-whisper/distil-small.en](https://huggingface.co/distil-whisper/distil-small.en)
-- 
+- Text to Speech -  VITS: Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech[kakao-enterprise/vits-ljs](https://huggingface.co/kakao-enterprise/vits-ljs)
+
+### Computer Vision 
+
+- Object Detection - DETR (End-to-End Object Detection) model with ResNet-50 backbone [facebook/detr-resnet-50](https://huggingface.co/facebook/detr-resnet-50)
+
+#### Websites / Papers Referenced: 
+
+- [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)
+- [Gradio](https://www.gradio.app/)
+
+
