@@ -58,11 +58,13 @@ Anyone who wants to get started building AI applications quickly and easily usin
 - Image Captioning - BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation [Salesforce/blip-image-captioning-base](https://huggingface.co/Salesforce/blip-image-captioning-base)
 - Visual Question Answering - # BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation [Salesforce/blip-vqa-base](https://huggingface.co/Salesforce/blip-vqa-base)
 - Zero-Shot Image Classification - CLIP Model [openai/clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14)
+  
 #### Websites / Papers Referenced: 
 
 - [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872)
 - [Gradio](https://www.gradio.app/)
 - [Segment Anything](https://segment-anything.com/)
 - [isl-org/DPT](https://github.com/isl-org/DPT)
-- [Vision Transformers for Dense Prediction](https://arxiv.org/abs/2103.13413) 
+- [Vision Transformers for Dense Prediction](https://arxiv.org/abs/2103.13413)
+- [ZeroGPU Explorers](https://huggingface.co/zero-gpu-explorers): A place to spin free GPUs on demand for your spaces. 
 
