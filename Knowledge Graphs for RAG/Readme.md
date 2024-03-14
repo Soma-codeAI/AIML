@@ -20,7 +20,8 @@ This course will teach you how to leverage knowledge graphs within retrieval aug
 - Write advanced Cypher queries to retrieve relevant information from the graph and format it for inclusion in your prompt to an LLM.
 - After course completion, you’ll be well-equipped to use knowledge graphs to uncover deeper insights in your data, and enhance the performance of LLMs with structured, relevant context.
 
-
+## Who should join?
+Anyone who wants to understand how knowledge graphs work, how to build with them, and create better RAG applications. We recommend familiarity with LangChain or taking [LangChain: Chat with Your Data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/) prior to this course.
 
 
 
