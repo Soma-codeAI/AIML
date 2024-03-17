@@ -20,3 +20,5 @@ Learners who want to understand the techniques and applications of finetuning, w
 - [Twitter](https://www.twitter.com/realSharonZhou)
 - [Website](https://www.lamini.ai/?utm_source=deeplearning.ai&utm_medium=referral&utm_campaign=course_finetuning)
 
+## Reference
+- [Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning](https://arxiv.org/pdf/2303.15647.pdf)
