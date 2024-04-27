@@ -6,3 +6,19 @@
 - Practice quantizing open source multimodal and language models.
 
 [Quantization Fundamentals with Hugging Face](https://www.deeplearning.ai/short-courses/quantization-fundamentals-with-hugging-face/)
+
+
+![[Pasted image 20240418105431.png]]
+
+	![[Pasted image 20240418111458.png]]
+
+![[Pasted image 20240418111548.png]]
+
+
+![[Pasted image 20240420205652.png]]![[Pasted image 20240420205726.png]]
+![[Pasted image 20240420210534.png]]![[Pasted image 20240420210634.png]]
+
+![[Pasted image 20240420210939.png]]
+
+
+![[Pasted image 20240420211640.png]]
