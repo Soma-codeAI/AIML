@@ -5,17 +5,16 @@ Learn how to quantize any open source model.
 - Learn about linear quantization, a simple yet effective method for compressing models.
 - Practice quantizing open source multimodal and language models.
 
-![[Pasted image 20240418105431.png]]
+![Models Keep getting bigger](./Pasted%20image%2020240418105431.png)
 
-	![[Pasted image 20240418111458.png]]
+![Lesson Plan](./Pasted%20image%2020240420211640.png)
 
-![[Pasted image 20240418111548.png]]
+![Out of the box Quantization Methods](./Pasted%20image%2020240420210939.png)
 
-
-![[Pasted image 20240420205652.png]]![[Pasted image 20240420205726.png]]
-![[Pasted image 20240420210534.png]]![[Pasted image 20240420210634.png]]
-
-![[Pasted image 20240420210939.png]]
+![Easier to Distribute](./Pasted%20image%2020240420210826.png)
 
 
-![[Pasted image 20240420211640.png]]
+
+
+
+
