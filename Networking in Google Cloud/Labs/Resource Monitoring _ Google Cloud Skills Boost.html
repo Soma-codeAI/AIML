@@ -1,0 +1,3481 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://www.cloudskillsboost.google/classrooms/26082/labs/223624 -->
+<html lang="en" class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="origin-trial" content="3NNj0GXVktLOmVKwWUDendk4Vq2qgMVDBDX+Sni48ATJl9JBj+zF+9W2HGB3pvt6qowOihTbQgTeBm9SKbdTwYAAABfeyJvcmlnaW4iOiJodHRwczovL3JlY2FwdGNoYS5uZXQ6NDQzIiwiZmVhdHVyZSI6IlRwY2QiLCJleHBpcnkiOjE3MzUzNDM5OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A7uxtj3+hJmOcZFooFT0Ps276PuOqGnM1jfoPbFvxWp73VC60LnYGzayHVvcFeEiF0qrwy7fQAL+gGVXU+f9IQcAAACTeyJvcmlnaW4iOiJodHRwczovL3JlY2FwdGNoYS5uZXQ6NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="3NNj0GXVktLOmVKwWUDendk4Vq2qgMVDBDX+Sni48ATJl9JBj+zF+9W2HGB3pvt6qowOihTbQgTeBm9SKbdTwYAAABfeyJvcmlnaW4iOiJodHRwczovL3JlY2FwdGNoYS5uZXQ6NDQzIiwiZmVhdHVyZSI6IlRwY2QiLCJleHBpcnkiOjE3MzUzNDM5OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A7uxtj3+hJmOcZFooFT0Ps276PuOqGnM1jfoPbFvxWp73VC60LnYGzayHVvcFeEiF0qrwy7fQAL+gGVXU+f9IQcAAACTeyJvcmlnaW4iOiJodHRwczovL3JlY2FwdGNoYS5uZXQ6NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 2147483647;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style><style type="text/css" data-tag-name="trix-editor">trix-editor {
+    display: block;
+}
+
+trix-editor:empty:not(:focus)::before {
+    content: attr(placeholder);
+    color: graytext;
+    cursor: text;
+    pointer-events: none;
+    white-space: pre-line;
+}
+
+trix-editor a[contenteditable=false] {
+    cursor: text;
+}
+
+trix-editor img {
+    max-width: 100%;
+    height: auto;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea {
+    resize: none;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea.trix-autoresize-clone {
+    position: absolute;
+    left: -9999px;
+    max-height: 0px;
+}
+
+trix-editor [data-trix-attachment] figcaption[data-trix-placeholder]:empty::before {
+    content: attr(data-trix-placeholder);
+    color: graytext;
+}
+
+trix-editor [data-trix-cursor-target] {
+    display: inline-block !important;
+    width: 1px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+trix-editor [data-trix-cursor-target=left] {
+    vertical-align: top !important;
+    margin-left: -1px !important;
+}
+
+trix-editor [data-trix-cursor-target=right] {
+    vertical-align: bottom !important;
+    margin-right: -1px !important;
+}</style><style type="text/css" data-tag-name="trix-toolbar">trix-toolbar {
+  display: block;
+}
+
+trix-toolbar {
+  white-space: nowrap;
+}
+
+trix-toolbar [data-trix-dialog] {
+  display: none;
+}
+
+trix-toolbar [data-trix-dialog][data-trix-active] {
+  display: block;
+}
+
+trix-toolbar [data-trix-dialog] [data-trix-validate]:invalid {
+  background-color: #ffdddd;
+}</style>
+<title>Resource Monitoring | Google Cloud Skills Boost</title>
+<meta name="action-cable-url" content="/cable">
+<script type="text/javascript" async="" charset="utf-8" src="./Resource Monitoring _ Google Cloud Skills Boost_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-BJuEtmqk8gvp2kvOiXzxtaoRQQS7QjSOSAczV0tKC29lpbOt/RFR43n1iVnzO4Em"></script><script type="text/javascript" async="" charset="utf-8" src="./Resource Monitoring _ Google Cloud Skills Boost_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-BJuEtmqk8gvp2kvOiXzxtaoRQQS7QjSOSAczV0tKC29lpbOt/RFR43n1iVnzO4Em"></script><script>
+//<![CDATA[
+window.gon={};gon.deployment="google-run";
+//]]>
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  const properties = JSON.parse(atob('eyJsb2NhbGUiOiJlbiIsIm9yZ2FuaXphdGlvbiI6IkZpc2VydiIsInVzZXJfcm9sZXMiOiJzdHVkZW50IiwiZmVhdHVyZV9zdXBwb3J0X2NhbGxvdXRzIjp0cnVlLCJmZWF0dXJlX2l3X2FpX2Fzc2lzdGFudCI6dHJ1ZSwiZmVhdHVyZV9mcm9udF9kb29yX2xhbmRpbmdfcGFnZSI6dHJ1ZSwiZmVhdHVyZV9yZXJvdXRlX25ld19pbnRlcnZpZXdfd2FybXVwIjp0cnVlLCJmZWF0dXJlX3Byb2dyYW1fYW5ub3VuY2VtZW50cyI6dHJ1ZSwiZmVhdHVyZV9nY3Nib19mcmVlIjp0cnVlLCJmZWF0dXJlX3BlcnNvbmFsaXplZF9xdWVzdHMiOmZhbHNlLCJmZWF0dXJlX2FsZXhhbmRyaWFfc3Vic2NyaXB0aW9uc19wYWdpbmF0aW9uIjp0cnVlLCJmZWF0dXJlX2Jhcmtlcl9wYXVzZSI6ZmFsc2UsImZlYXR1cmVfZW50aXR5X2FwaV9rZXlzIjp0cnVlLCJmZWF0dXJlX2hpZGVfcHJpY2UiOnRydWUsImZlYXR1cmVfaW5ub3ZhdG9yX21lbWJlcnNoaXAiOnRydWUsImZlYXR1cmVfc2VhcmNoX2F1dG9jb21wbGV0ZSI6dHJ1ZSwiZmVhdHVyZV9haV9za2lsbHMiOnRydWUsImZlYXR1cmVfaW5ub3ZhdG9yX3NpZ25faW4iOmZhbHNlLCJmZWF0dXJlX3NlYXJjaF9hc3luYyI6dHJ1ZSwiZmVhdHVyZV9hbGV4YW5kcmlhX3Nob3dfYnVuZGxlX2Vycm9ycyI6dHJ1ZSwiZmVhdHVyZV9jYXRhbG9nX2ZpbHRlcnNfYnV0dG9uIjp0cnVlLCJmZWF0dXJlX25ld19jYXJkcyI6dHJ1ZSwiZmVhdHVyZV9zaG93X2FubnVhbF9wdXJjaGFzZV9ub3ciOnRydWUsImZlYXR1cmVfY2hhdF9vZmZfZm9yX3NpZ25lZF9vdXRfdXNlcnMiOnRydWUsImZlYXR1cmVfY291cnNlX21vbmV0aXphdGlvbiI6dHJ1ZSwiZmVhdHVyZV9sYW5kaW5nX3BhZ2UiOnRydWUsImZlYXR1cmVfaW5ub3ZhdG9yX21lbWJlcnNoaXBfbW9kYWwiOnRydWUsImZlYXR1cmVfbGVhcm5pbmdfcGxhbl9zZWFyY2giOnRydWUsImZlYXR1cmVfbW9uc29vbl9xdW90YV92MiI6dHJ1ZSwiZmVhdHVyZV9kZWR1cF9iYWRnZSI6dHJ1ZSwiZmVhdHVyZV9yaXNlX3BvYyI6dHJ1ZSwiZmVhdHVyZV9jb3Vyc2VfYnVpbGRlciI6ZmFsc2UsImZlYXR1cmVfc2VhcmNoX3VwZGF0ZXMiOnRydWUsImZlYXR1cmVfYWdyZXNzaXZlX21vbnNvb25fcXVvdGEiOnRydWUsImZlYXR1cmVfbGVhcm5lcl9wcm9maWxlX3V4IjpmYWxzZSwiZmVhdHVyZV90ZWxsX25hdnlfYWxsb3dlZF96b25lcyI6dHJ1ZSwiZmVhdHVyZV9jYW5vbmljYWxfZG9tYWluX3JlZGlyZWN0Ijp0cnVlLCJmZWF0dXJlX2ZlZWRiYWNrIjp0cnVlLCJmZWF0dXJlX2d1ZXN0X3VzZXIiOnRydWUsImZlYXR1cmVfc2VhcmNoX3NvcnRfYnkiOnRydWUsImZlYXR1cmVfb2F1dGhfcmlzY19zaHV0b2ZmIjp0cnVlLCJmZWF0dXJlX3RlYW1zIjp0cnVlLCJmZWF0dXJlX3BlcmZfdGVzdCI6ZmFsc2UsImZlYXR1cmVfcGVlcl9hc3NpZ25tZW50IjpmYWxzZSwiZmVhdHVyZV9vbmVfdGFwIjp0cnVlLCJmZWF0dXJlX3VzZWRfaW4iOnRydWUsImZlYXR1cmVfY3JlZGx5X2ludGVncmF0aW9uX2Fubm91bmNlbWVudF9tb2RhbCI6dHJ1ZSwiZmVhdHVyZV9hdXRvX2NvdXJzZV91cGdyYWRlIjpmYWxzZSwiZmVhdHVyZV9tb25zb29uX3F1b3RhIjp0cnVlLCJmZWF0dXJlX29ucmFtcCI6dHJ1ZSwiZmVhdHVyZV9jYWNoZV9leHBsb3JlX3BhZ2VfcmVzdWx0Ijp0cnVlLCJmZWF0dXJlX2NvbnRlbnRfcHJvdmlkZXJfYWRtaW4iOnRydWUsImZlYXR1cmVfbG9nX2Nvb2tpZXMiOmZhbHNlLCJmZWF0dXJlX3R1cmJvIjpmYWxzZSwiZmVhdHVyZV9zaG93X2ludGVydmlld193YXJtdXAiOnRydWUsImZlYXR1cmVfaGlkZV91bnBvcHVsYXJfZmlsdGVycyI6dHJ1ZSwiZmVhdHVyZV9jcmVkbHkiOnRydWUsImZlYXR1cmVfaWx0X2NvbnRlbnRfcHJvZ3JhbSI6ZmFsc2UsImZlYXR1cmVfYWJfY29udGVudF9nY3Atb25kZW1hbmQtY29udGVudC9ULUdPT0dBVi1CfHByb2plY3Qtc2Vla2hvLXB1YmxpYy1jYXRhbG9nfDEuMHwxLjEiOmZhbHNlLCJmZWF0dXJlX2NvbW11bml0eV9mb3J1bSI6ZmFsc2UsImZlYXR1cmVfZGV2ZWxvcGVyX3ByZW1pdW0iOnRydWUsImZlYXR1cmVfaGVhZGVyX3NlYXJjaF9iYXIiOnRydWUsImZlYXR1cmVfc3dpdGNoX3BhdGhfYW5kX2V4cGxvcmVfaGVhZGVycyI6dHJ1ZSwiZmVhdHVyZV9uZXdfcmVwb3J0X2ZpZWxkcyI6dHJ1ZSwiZmVhdHVyZV9zZWFyY2hfc3VnZ2VzdGlvbnMiOnRydWUsImZlYXR1cmVfY3JlZGx5X21hbmFnZW1lbnQiOmZhbHNlLCJncm91cF9zdWFkbWlucyI6ZmFsc2UsImdyb3VwX25vbl9zdWFkbWlucyI6dHJ1ZSwiZ3JvdXBfYWRtaW5zIjpmYWxzZSwiZ3JvdXBfdHJhaW5lcnMiOmZhbHNlLCJncm91cF9jb29yZGluYXRvcnMiOmZhbHNlLCJncm91cF9jcmVhdG9ycyI6ZmFsc2UsImdyb3VwX3N0dWRlbnRzIjp0cnVlLCJncm91cF9ub25fb3JnYW5pemF0aW9uIjpmYWxzZSwiZ3JvdXBfb3JnYW5pemF0aW9uX21lbWJlcnMiOnRydWUsImdyb3VwX25vbl9wcm9ncmFtIjp0cnVlLCJncm91cF9nb29nbGVycyI6ZmFsc2V9'));
+  properties.event = 'user_properties';
+  dataLayer.push(properties);
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    if (arguments[0] === 'event') {
+      dataLayer.push({ event: arguments[1], eventParams: arguments[2] }, { eventParams: undefined });
+    } else {
+      dataLayer.push(arguments);
+    }
+  }
+  let gtmLoaded = false;
+  function glueCookieNotificationBarLoaded() {
+    if (!gtmLoaded) {
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer',"GTM-MBRHNDG7");
+      gtmLoaded = true;
+    }
+  }
+  document.addEventListener('turbo:load', () => {
+    dataLayer.push({ event: 'page_view' });
+  });
+</script>
+<script src="./Resource Monitoring _ Google Cloud Skills Boost_files/webcomponents-loader-2e147cb1679d97581f981243bfc2d1c03dc34a58.js"></script>
+<script src="./Resource Monitoring _ Google Cloud Skills Boost_files/vendor-5ee6eafe71fd3831091397e1aa344044a8642273.js"></script>
+<script src="./Resource Monitoring _ Google Cloud Skills Boost_files/application-b63927e009724d5e97f1947b71c466dab777dace.js"></script><style>:root {
+  --game-color: #E52592;
+  --classroom-color: #01877E;
+  --external-course-color: #D56E0C;
+  --certification-color: #C5221F;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  border-bottom: none !important;
+}
+
+label abbr[title] {
+  color: var(--primary-text-on-surface-color);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--hairline-color);
+  display: block;
+  height: 1px;
+  margin: 24px 0;
+  padding: 0;
+}
+
+mark {
+  background-color: #F9AB00;
+  border-radius: 2px;
+  color: inherit;
+  padding: 2px 0px;
+}
+
+p, li {
+  font: var(--md-sys-typescale-body-large);
+}
+
+._small-label_1gdx7_37,
+._label--small_1gdx7_38 {
+  font: var(--md-sys-typescale-body-medium);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+._mdl-typography--small-title_1gdx7_47 {
+  color: #202124;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+._text--blue_1gdx7_53 {
+  color: var(--primary-text-on-surface-color);
+}
+
+._text--center_1gdx7_57 {
+  text-align: center;
+}
+
+._text--capitalize_1gdx7_61 {
+  text-transform: capitalize;
+}
+
+._text--code_1gdx7_65 {
+  font-family: "Roboto Mono", monospace;
+}
+
+._text--copy_1gdx7_69 {
+  font-family: var(--md-ref-typeface-plain);
+}
+
+._text--error_1gdx7_73 {
+  color: var(--warn-color);
+}
+
+._text--free_1gdx7_77 {
+  color: var(--success-color);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+._text--gray_1gdx7_83 {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+._text--light_1gdx7_87 {
+  color: var(--light-text-on-surface-color) !important;
+}
+
+._text--right_1gdx7_91 {
+  text-align: right;
+}
+
+._text--sign_1gdx7_95 {
+  font-family: "Oswald", sans-serif;
+}
+
+._text--small_1gdx7_99 {
+  font-size: 14px !important;
+}
+
+._text--large_1gdx7_103 {
+  font-size: 20px !important;
+}
+
+._text--success_1gdx7_107 {
+  color: var(--success-color) !important;
+}
+
+._text--yellow_1gdx7_111 {
+  color: #F9AB00;
+}
+
+._text--red_1gdx7_115 {
+  color: #D93025;
+}
+
+._text--green_1gdx7_119 {
+  color: #34A853;
+}
+
+u {
+  text-decoration: none;
+}
+
+._material-icons_1gdx7_127 {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+._ellipsis_1gdx7_149 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+._text--rtl_1gdx7_155 {
+  direction: rtl;
+}
+
+._body-wrapper_1gdx7_159 {
+  max-width: 800px;
+}
+
+._text--button_1gdx7_163 {
+  font: var(--md-sys-typescale-label-large);
+}</style>
+<script src="./Resource Monitoring _ Google Cloud Skills Boost_files/hallofmirrors-b4e8637d49337c7ac1dbce61e0af43e14ac7c629.js"></script>
+<custom-style>
+  <style is="custom-style">[hidden] {
+  display: none !important;
+}
+
+</style>
+</custom-style>
+<custom-style>
+  <style is="custom-style">html {
+  --layout_-_display:  flex;;
+
+      --layout-inline_-_display:  inline-flex;;
+
+      --layout-horizontal_-_display:  var(--layout_-_display); --layout-horizontal_-_-ms-flex-direction:  row; --layout-horizontal_-_-webkit-flex-direction:  row; --layout-horizontal_-_flex-direction:  row;;
+
+      --layout-horizontal-reverse_-_display:  var(--layout_-_display); --layout-horizontal-reverse_-_-ms-flex-direction:  row-reverse; --layout-horizontal-reverse_-_-webkit-flex-direction:  row-reverse; --layout-horizontal-reverse_-_flex-direction:  row-reverse;;
+
+      --layout-vertical_-_display:  var(--layout_-_display); --layout-vertical_-_-ms-flex-direction:  column; --layout-vertical_-_-webkit-flex-direction:  column; --layout-vertical_-_flex-direction:  column;;
+
+      --layout-vertical-reverse_-_display:  var(--layout_-_display); --layout-vertical-reverse_-_-ms-flex-direction:  column-reverse; --layout-vertical-reverse_-_-webkit-flex-direction:  column-reverse; --layout-vertical-reverse_-_flex-direction:  column-reverse;;
+
+      --layout-wrap_-_-ms-flex-wrap:  wrap; --layout-wrap_-_-webkit-flex-wrap:  wrap; --layout-wrap_-_flex-wrap:  wrap;;
+
+      --layout-wrap-reverse_-_-ms-flex-wrap:  wrap-reverse; --layout-wrap-reverse_-_-webkit-flex-wrap:  wrap-reverse; --layout-wrap-reverse_-_flex-wrap:  wrap-reverse;;
+
+      --layout-flex-auto_-_-ms-flex:  1 1 auto; --layout-flex-auto_-_-webkit-flex:  1 1 auto; --layout-flex-auto_-_flex:  1 1 auto;;
+
+      --layout-flex-none_-_-ms-flex:  none; --layout-flex-none_-_-webkit-flex:  none; --layout-flex-none_-_flex:  none;;
+
+      --layout-flex_-_-ms-flex:  1 1 0.000000001px; --layout-flex_-_-webkit-flex:  1; --layout-flex_-_flex:  1; --layout-flex_-_-webkit-flex-basis:  0.000000001px; --layout-flex_-_flex-basis:  0.000000001px;;
+
+      --layout-flex-2_-_-ms-flex:  2; --layout-flex-2_-_-webkit-flex:  2; --layout-flex-2_-_flex:  2;;
+
+      --layout-flex-3_-_-ms-flex:  3; --layout-flex-3_-_-webkit-flex:  3; --layout-flex-3_-_flex:  3;;
+
+      --layout-flex-4_-_-ms-flex:  4; --layout-flex-4_-_-webkit-flex:  4; --layout-flex-4_-_flex:  4;;
+
+      --layout-flex-5_-_-ms-flex:  5; --layout-flex-5_-_-webkit-flex:  5; --layout-flex-5_-_flex:  5;;
+
+      --layout-flex-6_-_-ms-flex:  6; --layout-flex-6_-_-webkit-flex:  6; --layout-flex-6_-_flex:  6;;
+
+      --layout-flex-7_-_-ms-flex:  7; --layout-flex-7_-_-webkit-flex:  7; --layout-flex-7_-_flex:  7;;
+
+      --layout-flex-8_-_-ms-flex:  8; --layout-flex-8_-_-webkit-flex:  8; --layout-flex-8_-_flex:  8;;
+
+      --layout-flex-9_-_-ms-flex:  9; --layout-flex-9_-_-webkit-flex:  9; --layout-flex-9_-_flex:  9;;
+
+      --layout-flex-10_-_-ms-flex:  10; --layout-flex-10_-_-webkit-flex:  10; --layout-flex-10_-_flex:  10;;
+
+      --layout-flex-11_-_-ms-flex:  11; --layout-flex-11_-_-webkit-flex:  11; --layout-flex-11_-_flex:  11;;
+
+      --layout-flex-12_-_-ms-flex:  12; --layout-flex-12_-_-webkit-flex:  12; --layout-flex-12_-_flex:  12;;
+
+      
+
+      --layout-start_-_-ms-flex-align:  start; --layout-start_-_-webkit-align-items:  flex-start; --layout-start_-_align-items:  flex-start;;
+
+      --layout-center_-_-ms-flex-align:  center; --layout-center_-_-webkit-align-items:  center; --layout-center_-_align-items:  center;;
+
+      --layout-end_-_-ms-flex-align:  end; --layout-end_-_-webkit-align-items:  flex-end; --layout-end_-_align-items:  flex-end;;
+
+      --layout-baseline_-_-ms-flex-align:  baseline; --layout-baseline_-_-webkit-align-items:  baseline; --layout-baseline_-_align-items:  baseline;;
+
+      
+
+      --layout-start-justified_-_-ms-flex-pack:  start; --layout-start-justified_-_-webkit-justify-content:  flex-start; --layout-start-justified_-_justify-content:  flex-start;;
+
+      --layout-center-justified_-_-ms-flex-pack:  center; --layout-center-justified_-_-webkit-justify-content:  center; --layout-center-justified_-_justify-content:  center;;
+
+      --layout-end-justified_-_-ms-flex-pack:  end; --layout-end-justified_-_-webkit-justify-content:  flex-end; --layout-end-justified_-_justify-content:  flex-end;;
+
+      --layout-around-justified_-_-ms-flex-pack:  distribute; --layout-around-justified_-_-webkit-justify-content:  space-around; --layout-around-justified_-_justify-content:  space-around;;
+
+      --layout-justified_-_-ms-flex-pack:  justify; --layout-justified_-_-webkit-justify-content:  space-between; --layout-justified_-_justify-content:  space-between;;
+
+      --layout-center-center_-_-ms-flex-align:  var(--layout-center_-_-ms-flex-align); --layout-center-center_-_-webkit-align-items:  var(--layout-center_-_-webkit-align-items); --layout-center-center_-_align-items:  var(--layout-center_-_align-items); --layout-center-center_-_-ms-flex-pack:  var(--layout-center-justified_-_-ms-flex-pack); --layout-center-center_-_-webkit-justify-content:  var(--layout-center-justified_-_-webkit-justify-content); --layout-center-center_-_justify-content:  var(--layout-center-justified_-_justify-content);;
+
+      
+
+      --layout-self-start_-_-ms-align-self:  flex-start; --layout-self-start_-_-webkit-align-self:  flex-start; --layout-self-start_-_align-self:  flex-start;;
+
+      --layout-self-center_-_-ms-align-self:  center; --layout-self-center_-_-webkit-align-self:  center; --layout-self-center_-_align-self:  center;;
+
+      --layout-self-end_-_-ms-align-self:  flex-end; --layout-self-end_-_-webkit-align-self:  flex-end; --layout-self-end_-_align-self:  flex-end;;
+
+      --layout-self-stretch_-_-ms-align-self:  stretch; --layout-self-stretch_-_-webkit-align-self:  stretch; --layout-self-stretch_-_align-self:  stretch;;
+
+      --layout-self-baseline_-_-ms-align-self:  baseline; --layout-self-baseline_-_-webkit-align-self:  baseline; --layout-self-baseline_-_align-self:  baseline;;
+
+      
+
+      --layout-start-aligned_-_-ms-flex-line-pack:  start; --layout-start-aligned_-_-ms-align-content:  flex-start; --layout-start-aligned_-_-webkit-align-content:  flex-start; --layout-start-aligned_-_align-content:  flex-start;;
+
+      --layout-end-aligned_-_-ms-flex-line-pack:  end; --layout-end-aligned_-_-ms-align-content:  flex-end; --layout-end-aligned_-_-webkit-align-content:  flex-end; --layout-end-aligned_-_align-content:  flex-end;;
+
+      --layout-center-aligned_-_-ms-flex-line-pack:  center; --layout-center-aligned_-_-ms-align-content:  center; --layout-center-aligned_-_-webkit-align-content:  center; --layout-center-aligned_-_align-content:  center;;
+
+      --layout-between-aligned_-_-ms-flex-line-pack:  justify; --layout-between-aligned_-_-ms-align-content:  space-between; --layout-between-aligned_-_-webkit-align-content:  space-between; --layout-between-aligned_-_align-content:  space-between;;
+
+      --layout-around-aligned_-_-ms-flex-line-pack:  distribute; --layout-around-aligned_-_-ms-align-content:  space-around; --layout-around-aligned_-_-webkit-align-content:  space-around; --layout-around-aligned_-_align-content:  space-around;;
+
+      
+
+      --layout-block_-_display:  block;;
+
+      --layout-invisible_-_visibility:  hidden !important;;
+
+      --layout-relative_-_position:  relative;;
+
+      --layout-fit_-_position:  absolute; --layout-fit_-_top:  0; --layout-fit_-_right:  0; --layout-fit_-_bottom:  0; --layout-fit_-_left:  0;;
+
+      --layout-scroll_-_-webkit-overflow-scrolling:  touch; --layout-scroll_-_overflow:  auto;;
+
+      --layout-fullbleed_-_margin:  0; --layout-fullbleed_-_height:  100vh;;
+
+      
+
+      --layout-fixed-top_-_position:  fixed; --layout-fixed-top_-_top:  0; --layout-fixed-top_-_left:  0; --layout-fixed-top_-_right:  0;;
+
+      --layout-fixed-right_-_position:  fixed; --layout-fixed-right_-_top:  0; --layout-fixed-right_-_right:  0; --layout-fixed-right_-_bottom:  0;;
+
+      --layout-fixed-bottom_-_position:  fixed; --layout-fixed-bottom_-_right:  0; --layout-fixed-bottom_-_bottom:  0; --layout-fixed-bottom_-_left:  0;;
+
+      --layout-fixed-left_-_position:  fixed; --layout-fixed-left_-_top:  0; --layout-fixed-left_-_bottom:  0; --layout-fixed-left_-_left:  0;;
+}
+
+</style>
+</custom-style><style>[hidden] { display: none !important; }</style><custom-style>
+  <style is="custom-style">html {
+  --google-red-100: #f4c7c3;
+      --google-red-300: #e67c73;
+      --google-red-500: #db4437;
+      --google-red-700: #c53929;
+
+      --google-blue-100: #c6dafc;
+      --google-blue-300: #7baaf7;
+      --google-blue-500: #4285f4;
+      --google-blue-700: #3367d6;
+
+      --google-green-100: #b7e1cd;
+      --google-green-300: #57bb8a;
+      --google-green-500: #0f9d58;
+      --google-green-700: #0b8043;
+
+      --google-yellow-100: #fce8b2;
+      --google-yellow-300: #f7cb4d;
+      --google-yellow-500: #f4b400;
+      --google-yellow-700: #f09300;
+
+      --google-grey-100: #f5f5f5;
+      --google-grey-300: #e0e0e0;
+      --google-grey-500: #9e9e9e;
+      --google-grey-700: #616161;
+
+      
+
+      --paper-red-50: #ffebee;
+      --paper-red-100: #ffcdd2;
+      --paper-red-200: #ef9a9a;
+      --paper-red-300: #e57373;
+      --paper-red-400: #ef5350;
+      --paper-red-500: #f44336;
+      --paper-red-600: #e53935;
+      --paper-red-700: #d32f2f;
+      --paper-red-800: #c62828;
+      --paper-red-900: #b71c1c;
+      --paper-red-a100: #ff8a80;
+      --paper-red-a200: #ff5252;
+      --paper-red-a400: #ff1744;
+      --paper-red-a700: #d50000;
+
+      --paper-pink-50: #fce4ec;
+      --paper-pink-100: #f8bbd0;
+      --paper-pink-200: #f48fb1;
+      --paper-pink-300: #f06292;
+      --paper-pink-400: #ec407a;
+      --paper-pink-500: #e91e63;
+      --paper-pink-600: #d81b60;
+      --paper-pink-700: #c2185b;
+      --paper-pink-800: #ad1457;
+      --paper-pink-900: #880e4f;
+      --paper-pink-a100: #ff80ab;
+      --paper-pink-a200: #ff4081;
+      --paper-pink-a400: #f50057;
+      --paper-pink-a700: #c51162;
+
+      --paper-purple-50: #f3e5f5;
+      --paper-purple-100: #e1bee7;
+      --paper-purple-200: #ce93d8;
+      --paper-purple-300: #ba68c8;
+      --paper-purple-400: #ab47bc;
+      --paper-purple-500: #9c27b0;
+      --paper-purple-600: #8e24aa;
+      --paper-purple-700: #7b1fa2;
+      --paper-purple-800: #6a1b9a;
+      --paper-purple-900: #4a148c;
+      --paper-purple-a100: #ea80fc;
+      --paper-purple-a200: #e040fb;
+      --paper-purple-a400: #d500f9;
+      --paper-purple-a700: #aa00ff;
+
+      --paper-deep-purple-50: #ede7f6;
+      --paper-deep-purple-100: #d1c4e9;
+      --paper-deep-purple-200: #b39ddb;
+      --paper-deep-purple-300: #9575cd;
+      --paper-deep-purple-400: #7e57c2;
+      --paper-deep-purple-500: #673ab7;
+      --paper-deep-purple-600: #5e35b1;
+      --paper-deep-purple-700: #512da8;
+      --paper-deep-purple-800: #4527a0;
+      --paper-deep-purple-900: #311b92;
+      --paper-deep-purple-a100: #b388ff;
+      --paper-deep-purple-a200: #7c4dff;
+      --paper-deep-purple-a400: #651fff;
+      --paper-deep-purple-a700: #6200ea;
+
+      --paper-indigo-50: #e8eaf6;
+      --paper-indigo-100: #c5cae9;
+      --paper-indigo-200: #9fa8da;
+      --paper-indigo-300: #7986cb;
+      --paper-indigo-400: #5c6bc0;
+      --paper-indigo-500: #3f51b5;
+      --paper-indigo-600: #3949ab;
+      --paper-indigo-700: #303f9f;
+      --paper-indigo-800: #283593;
+      --paper-indigo-900: #1a237e;
+      --paper-indigo-a100: #8c9eff;
+      --paper-indigo-a200: #536dfe;
+      --paper-indigo-a400: #3d5afe;
+      --paper-indigo-a700: #304ffe;
+
+      --paper-blue-50: #e3f2fd;
+      --paper-blue-100: #bbdefb;
+      --paper-blue-200: #90caf9;
+      --paper-blue-300: #64b5f6;
+      --paper-blue-400: #42a5f5;
+      --paper-blue-500: #2196f3;
+      --paper-blue-600: #1e88e5;
+      --paper-blue-700: #1976d2;
+      --paper-blue-800: #1565c0;
+      --paper-blue-900: #0d47a1;
+      --paper-blue-a100: #82b1ff;
+      --paper-blue-a200: #448aff;
+      --paper-blue-a400: #2979ff;
+      --paper-blue-a700: #2962ff;
+
+      --paper-light-blue-50: #e1f5fe;
+      --paper-light-blue-100: #b3e5fc;
+      --paper-light-blue-200: #81d4fa;
+      --paper-light-blue-300: #4fc3f7;
+      --paper-light-blue-400: #29b6f6;
+      --paper-light-blue-500: #03a9f4;
+      --paper-light-blue-600: #039be5;
+      --paper-light-blue-700: #0288d1;
+      --paper-light-blue-800: #0277bd;
+      --paper-light-blue-900: #01579b;
+      --paper-light-blue-a100: #80d8ff;
+      --paper-light-blue-a200: #40c4ff;
+      --paper-light-blue-a400: #00b0ff;
+      --paper-light-blue-a700: #0091ea;
+
+      --paper-cyan-50: #e0f7fa;
+      --paper-cyan-100: #b2ebf2;
+      --paper-cyan-200: #80deea;
+      --paper-cyan-300: #4dd0e1;
+      --paper-cyan-400: #26c6da;
+      --paper-cyan-500: #00bcd4;
+      --paper-cyan-600: #00acc1;
+      --paper-cyan-700: #0097a7;
+      --paper-cyan-800: #00838f;
+      --paper-cyan-900: #006064;
+      --paper-cyan-a100: #84ffff;
+      --paper-cyan-a200: #18ffff;
+      --paper-cyan-a400: #00e5ff;
+      --paper-cyan-a700: #00b8d4;
+
+      --paper-teal-50: #e0f2f1;
+      --paper-teal-100: #b2dfdb;
+      --paper-teal-200: #80cbc4;
+      --paper-teal-300: #4db6ac;
+      --paper-teal-400: #26a69a;
+      --paper-teal-500: #009688;
+      --paper-teal-600: #00897b;
+      --paper-teal-700: #00796b;
+      --paper-teal-800: #00695c;
+      --paper-teal-900: #004d40;
+      --paper-teal-a100: #a7ffeb;
+      --paper-teal-a200: #64ffda;
+      --paper-teal-a400: #1de9b6;
+      --paper-teal-a700: #00bfa5;
+
+      --paper-green-50: #e8f5e9;
+      --paper-green-100: #c8e6c9;
+      --paper-green-200: #a5d6a7;
+      --paper-green-300: #81c784;
+      --paper-green-400: #66bb6a;
+      --paper-green-500: #4caf50;
+      --paper-green-600: #43a047;
+      --paper-green-700: #388e3c;
+      --paper-green-800: #2e7d32;
+      --paper-green-900: #1b5e20;
+      --paper-green-a100: #b9f6ca;
+      --paper-green-a200: #69f0ae;
+      --paper-green-a400: #00e676;
+      --paper-green-a700: #00c853;
+
+      --paper-light-green-50: #f1f8e9;
+      --paper-light-green-100: #dcedc8;
+      --paper-light-green-200: #c5e1a5;
+      --paper-light-green-300: #aed581;
+      --paper-light-green-400: #9ccc65;
+      --paper-light-green-500: #8bc34a;
+      --paper-light-green-600: #7cb342;
+      --paper-light-green-700: #689f38;
+      --paper-light-green-800: #558b2f;
+      --paper-light-green-900: #33691e;
+      --paper-light-green-a100: #ccff90;
+      --paper-light-green-a200: #b2ff59;
+      --paper-light-green-a400: #76ff03;
+      --paper-light-green-a700: #64dd17;
+
+      --paper-lime-50: #f9fbe7;
+      --paper-lime-100: #f0f4c3;
+      --paper-lime-200: #e6ee9c;
+      --paper-lime-300: #dce775;
+      --paper-lime-400: #d4e157;
+      --paper-lime-500: #cddc39;
+      --paper-lime-600: #c0ca33;
+      --paper-lime-700: #afb42b;
+      --paper-lime-800: #9e9d24;
+      --paper-lime-900: #827717;
+      --paper-lime-a100: #f4ff81;
+      --paper-lime-a200: #eeff41;
+      --paper-lime-a400: #c6ff00;
+      --paper-lime-a700: #aeea00;
+
+      --paper-yellow-50: #fffde7;
+      --paper-yellow-100: #fff9c4;
+      --paper-yellow-200: #fff59d;
+      --paper-yellow-300: #fff176;
+      --paper-yellow-400: #ffee58;
+      --paper-yellow-500: #ffeb3b;
+      --paper-yellow-600: #fdd835;
+      --paper-yellow-700: #fbc02d;
+      --paper-yellow-800: #f9a825;
+      --paper-yellow-900: #f57f17;
+      --paper-yellow-a100: #ffff8d;
+      --paper-yellow-a200: #ffff00;
+      --paper-yellow-a400: #ffea00;
+      --paper-yellow-a700: #ffd600;
+
+      --paper-amber-50: #fff8e1;
+      --paper-amber-100: #ffecb3;
+      --paper-amber-200: #ffe082;
+      --paper-amber-300: #ffd54f;
+      --paper-amber-400: #ffca28;
+      --paper-amber-500: #ffc107;
+      --paper-amber-600: #ffb300;
+      --paper-amber-700: #ffa000;
+      --paper-amber-800: #ff8f00;
+      --paper-amber-900: #ff6f00;
+      --paper-amber-a100: #ffe57f;
+      --paper-amber-a200: #ffd740;
+      --paper-amber-a400: #ffc400;
+      --paper-amber-a700: #ffab00;
+
+      --paper-orange-50: #fff3e0;
+      --paper-orange-100: #ffe0b2;
+      --paper-orange-200: #ffcc80;
+      --paper-orange-300: #ffb74d;
+      --paper-orange-400: #ffa726;
+      --paper-orange-500: #ff9800;
+      --paper-orange-600: #fb8c00;
+      --paper-orange-700: #f57c00;
+      --paper-orange-800: #ef6c00;
+      --paper-orange-900: #e65100;
+      --paper-orange-a100: #ffd180;
+      --paper-orange-a200: #ffab40;
+      --paper-orange-a400: #ff9100;
+      --paper-orange-a700: #ff6500;
+
+      --paper-deep-orange-50: #fbe9e7;
+      --paper-deep-orange-100: #ffccbc;
+      --paper-deep-orange-200: #ffab91;
+      --paper-deep-orange-300: #ff8a65;
+      --paper-deep-orange-400: #ff7043;
+      --paper-deep-orange-500: #ff5722;
+      --paper-deep-orange-600: #f4511e;
+      --paper-deep-orange-700: #e64a19;
+      --paper-deep-orange-800: #d84315;
+      --paper-deep-orange-900: #bf360c;
+      --paper-deep-orange-a100: #ff9e80;
+      --paper-deep-orange-a200: #ff6e40;
+      --paper-deep-orange-a400: #ff3d00;
+      --paper-deep-orange-a700: #dd2c00;
+
+      --paper-brown-50: #efebe9;
+      --paper-brown-100: #d7ccc8;
+      --paper-brown-200: #bcaaa4;
+      --paper-brown-300: #a1887f;
+      --paper-brown-400: #8d6e63;
+      --paper-brown-500: #795548;
+      --paper-brown-600: #6d4c41;
+      --paper-brown-700: #5d4037;
+      --paper-brown-800: #4e342e;
+      --paper-brown-900: #3e2723;
+
+      --paper-grey-50: #fafafa;
+      --paper-grey-100: #f5f5f5;
+      --paper-grey-200: #eeeeee;
+      --paper-grey-300: #e0e0e0;
+      --paper-grey-400: #bdbdbd;
+      --paper-grey-500: #9e9e9e;
+      --paper-grey-600: #757575;
+      --paper-grey-700: #616161;
+      --paper-grey-800: #424242;
+      --paper-grey-900: #212121;
+
+      --paper-blue-grey-50: #eceff1;
+      --paper-blue-grey-100: #cfd8dc;
+      --paper-blue-grey-200: #b0bec5;
+      --paper-blue-grey-300: #90a4ae;
+      --paper-blue-grey-400: #78909c;
+      --paper-blue-grey-500: #607d8b;
+      --paper-blue-grey-600: #546e7a;
+      --paper-blue-grey-700: #455a64;
+      --paper-blue-grey-800: #37474f;
+      --paper-blue-grey-900: #263238;
+
+      
+      --dark-divider-opacity: 0.12;
+      --dark-disabled-opacity: 0.38; 
+      --dark-secondary-opacity: 0.54;
+      --dark-primary-opacity: 0.87;
+
+      
+      --light-divider-opacity: 0.12;
+      --light-disabled-opacity: 0.3; 
+      --light-secondary-opacity: 0.7;
+      --light-primary-opacity: 1.0;
+}
+
+</style>
+</custom-style><custom-style>
+  <style is="custom-style">html {
+  --primary-text-color: var(--light-theme-text-color);
+      --primary-background-color: var(--light-theme-background-color);
+      --secondary-text-color: var(--light-theme-secondary-color);
+      --disabled-text-color: var(--light-theme-disabled-color);
+      --divider-color: var(--light-theme-divider-color);
+      --error-color: var(--paper-deep-orange-a700);
+
+      
+      --primary-color: var(--paper-indigo-500);
+      --light-primary-color: var(--paper-indigo-100);
+      --dark-primary-color: var(--paper-indigo-700);
+
+      --accent-color: var(--paper-pink-a200);
+      --light-accent-color: var(--paper-pink-a100);
+      --dark-accent-color: var(--paper-pink-a400);
+
+
+      
+      --light-theme-background-color: #ffffff;
+      --light-theme-base-color: #000000;
+      --light-theme-text-color: var(--paper-grey-900);
+      --light-theme-secondary-color: #737373;  
+      --light-theme-disabled-color: #9b9b9b;  
+      --light-theme-divider-color: #dbdbdb;
+
+      
+      --dark-theme-background-color: var(--paper-grey-900);
+      --dark-theme-base-color: #ffffff;
+      --dark-theme-text-color: #ffffff;
+      --dark-theme-secondary-color: #bcbcbc;  
+      --dark-theme-disabled-color: #646464;  
+      --dark-theme-divider-color: #3c3c3c;
+
+      
+      --text-primary-color: var(--dark-theme-text-color);
+      --default-primary-color: var(--primary-color);
+}
+
+</style>
+</custom-style><script async="" src="./Resource Monitoring _ Google Cloud Skills Boost_files/lazy.min.js"></script><script src="./Resource Monitoring _ Google Cloud Skills Boost_files/loader.js"></script>
+<script src="./Resource Monitoring _ Google Cloud Skills Boost_files/api.js"></script>
+<script id="ze-snippet" src="./Resource Monitoring _ Google Cloud Skills Boost_files/snippet.js"></script>
+
+
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="ENCTX5nKRLeTiE30ItaFlCnIeSEvdOQt11vCdTcYZuVtlBzw+fizTRcBIYNQxFBRRAHZ1yBhT7Zw4A/O6PoMJA==">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="1rRsY0INj8RvwB5EF5pwdxt2A2P9aDgAlsICaJ0d5w0" name="google-site-verification">
+<meta content="#3681E4" property="msapplication-TileColor">
+<meta content="/favicon-144.png" property="msapplication-TileImage">
+<meta content="{&quot;userId&quot;:41332617,&quot;experimentIds&quot;:[&quot;support_callouts&quot;,&quot;iw_ai_assistant&quot;,&quot;front_door_landing_page&quot;,&quot;reroute_new_interview_warmup&quot;,&quot;program_announcements&quot;,&quot;gcsbo_free&quot;,&quot;alexandria_subscriptions_pagination&quot;,&quot;entity_api_keys&quot;,&quot;hide_price&quot;,&quot;innovator_membership&quot;,&quot;search_autocomplete&quot;,&quot;ai_skills&quot;,&quot;search_async&quot;,&quot;alexandria_show_bundle_errors&quot;,&quot;catalog_filters_button&quot;,&quot;new_cards&quot;,&quot;show_annual_purchase_now&quot;,&quot;chat_off_for_signed_out_users&quot;,&quot;course_monetization&quot;,&quot;landing_page&quot;,&quot;innovator_membership_modal&quot;,&quot;learning_plan_search&quot;,&quot;monsoon_quota_v2&quot;,&quot;dedup_badge&quot;,&quot;rise_poc&quot;,&quot;agressive_monsoon_quota&quot;,&quot;tell_navy_allowed_zones&quot;,&quot;canonical_domain_redirect&quot;,&quot;feedback&quot;,&quot;guest_user&quot;,&quot;search_sort_by&quot;,&quot;oauth_risc_shutoff&quot;,&quot;teams&quot;,&quot;one_tap&quot;,&quot;used_in&quot;,&quot;credly_integration_announcement_modal&quot;,&quot;monsoon_quota&quot;,&quot;onramp&quot;,&quot;cache_explore_page_result&quot;,&quot;content_provider_admin&quot;,&quot;show_interview_warmup&quot;,&quot;hide_unpopular_filters&quot;,&quot;credly&quot;,&quot;developer_premium&quot;,&quot;header_search_bar&quot;,&quot;switch_path_and_explore_headers&quot;,&quot;new_report_fields&quot;,&quot;search_suggestions&quot;]}" name="help-api-product-data">
+<meta content="{&quot;groupIds&quot;:[&quot;non_suadmins&quot;,&quot;students&quot;,&quot;organization_members&quot;,&quot;non_program&quot;]}" name="help-api-custom-data">
+<meta content="In this lab you learn how to use Cloud Monitoring to gain insight into applications that run on Google Cloud Platform." name="description">
+<meta content="Qwiklabs" name="author">
+<meta content="Resource Monitoring | Google Cloud Skills Boost" property="og:title">
+<meta content="website" property="og:type">
+<meta content="/favicon-144.png" property="og:image">
+<meta content="Qwiklabs" property="og:site_name">
+<meta content="In this lab you learn how to use Cloud Monitoring to gain insight into applications that run on Google Cloud Platform." property="og:description">
+<meta content="/qwiklabs_logo_900x887.png" property="og:logo" size="900x887">
+<meta content="/qwiklabs_logo_994x187.png" property="og:logo" size="994x187">
+
+
+<meta property="og:url" content="https://www.cloudskillsboost.google/classrooms/26082/labs/223624"><link href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624" rel="canonical">
+<link href="https://cdn.qwiklabs.com/X46FrQX4iLxHW5MxL8jICvgZM0evMEKscCeQO%2BazGdo%3D" rel="shortcut icon" type="image/x-icon">
+
+
+<link rel="stylesheet" href="./Resource Monitoring _ Google Cloud Skills Boost_files/css" media="screen">
+
+<link rel="stylesheet" href="./Resource Monitoring _ Google Cloud Skills Boost_files/application-695216663cb0699363a80338f91725185aa37b9c.css" media="all">
+<link rel="stylesheet" href="./Resource Monitoring _ Google Cloud Skills Boost_files/cookienotificationbar.min.css" media="screen">
+
+
+<style>
+  :root {
+    --primary-text-on-surface-color: #0b57d0;
+    --primary-text-on-surface-color-dark: #0a4eba;
+    --primary-text-on-surface-color-darker: #0945a4;
+    --primary-text-on-surface-color-darkest: #083c8f;
+    --primary-surface-color: #0b57d0;
+    --primary-surface-color-rgb: 11,87,208;
+    --primary-surface-color-light: #cfe0fc;
+    --primary-surface-color-lightest: #e7f0fe;
+    --text-on-primary-color: #ffffff;
+    --accent-text-on-surface-color: #f000e8;
+    --accent-surface-color: #f9ab00;
+    --accent-surface-color-rgb: 249,171,0;
+    --accent-surface-color-light: #ffefcc;
+    --text-on-accent-color: #202124;
+  }
+</style>
+
+
+
+</head>
+<body class="lab-show l-full no-nav application-new focuses focuses-show lab-show l-full no-nav ">
+<div class="header-container light-theme">
+<div class="header">
+<ql-toolbar jumpenabled=""><template shadowrootmode="open"><!---->
+      <!--?lit$238151522$-->
+      <div class=" jump-container ">
+        <ql-button hairline="" class="jump-to-content" href="#jump-content" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-outlined-button href="#jump-content" class=" ql-button default " data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><div class="outline"></div>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="link" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="link" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><a id="link" class="button" href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#jump-content"><!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </a>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-outlined-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+          <!--?lit$238151522$-->Jump to content
+        </ql-button>
+      </div>
+    
+      <span class="navigation">
+        <slot name="navigation"></slot>
+      </span>
+      <span class="title">
+        <slot name="title"></slot>
+      </span>
+      <span class="tabs">
+        <slot name="tabs"></slot>
+      </span>
+      <span class="actions">
+        <slot name="action"></slot>
+      </span>
+    </template>
+<div class="header__title" slot="title">
+<ql-icon-button label="Back" href="/classrooms/26082" id="4874410587034ae9" tip="Back" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-icon-button href="/classrooms/26082" class=" ql-icon-button " data-aria-label="Back" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!----><div id="button" class="icon-button  standard ">
+        <!--?lit$238151522$--><md-focus-ring part="focus-ring" for="link" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <!--?lit$238151522$--><md-ripple for="link" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <!--?lit$238151522$--><span class="icon"><slot></slot></span>
+        <!--?lit$238151522$-->
+        <!--?lit$238151522$--><span class="touch"></span>
+        <!--?lit$238151522$-->
+      <a class="link" id="link" href="https://www.cloudskillsboost.google/classrooms/26082" aria-label="Back"></a>
+    
+  </div></template>
+          <!--?lit$238151522$--><ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template><!--?lit$238151522$--><slot></slot></ql-icon>
+        </md-icon-button>
+      </div>
+     <!--?lit$238151522$--> </template>arrow_back</ql-icon-button>
+<h1 class="ql-title-medium">Resource Monitoring</h1>
+</div>
+<div class="header__actions" slot="action">
+<ql-icon-button id="control-panel-target" style="display: none;" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-icon-button class=" ql-icon-button " data-aria-busy="false" value="" data-aria-label="dashboard" data-aria-haspopup="true" aria-controls="control-panel-menu"><template shadowrootmode="open" shadowrootdelegatesfocus><!----><button id="button" class="icon-button  standard " aria-label="dashboard" aria-haspopup="true">
+        <!--?lit$238151522$--><md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <!--?lit$238151522$--><md-ripple aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <!--?lit$238151522$--><span class="icon"><slot></slot></span>
+        <!--?lit$238151522$-->
+        <!--?lit$238151522$--><span class="touch"></span>
+        <!--?lit$238151522$-->
+  </button></template>
+          <!--?lit$238151522$--><ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template><!--?lit$238151522$--><slot></slot></ql-icon>
+        </md-icon-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+dashboard
+</ql-icon-button>
+<ql-menu for="control-panel-target" id="control-panel-menu" tabindex="-1" aria-hidden="true" style="left: -1000px; top: -1000px; opacity: 0; visibility: hidden;" role="menu" aria-labelledby="control-panel-target"><template shadowrootmode="open"><!---->
+      <ql-card elevation="3"><template shadowrootmode="open"><!---->
+      <div part="body" class="card   ">
+        <slot></slot>
+      </div>
+    </template>
+        <slot></slot>
+      </ql-card>
+    </template></ql-menu>
+<ql-icon-button class="mobile-hide" icon="help_outline" id="help-menu-button" label="Open help menu" tip="Help" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-icon-button class=" ql-icon-button " data-aria-label="Open help menu" data-aria-busy="false" value="" data-aria-haspopup="true" aria-controls="help-menu"><template shadowrootmode="open" shadowrootdelegatesfocus><!----><button id="button" class="icon-button  standard " aria-label="Open help menu" aria-haspopup="true">
+        <!--?lit$238151522$--><md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <!--?lit$238151522$--><md-ripple aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <!--?lit$238151522$--><span class="icon"><slot></slot></span>
+        <!--?lit$238151522$-->
+        <!--?lit$238151522$--><span class="touch"></span>
+        <!--?lit$238151522$-->
+  </button></template>
+          <!--?lit$238151522$--><ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template><!--?lit$238151522$-->help_outline</ql-icon>
+        </md-icon-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-icon-button>
+<ql-menu for="help-menu-button" id="help-menu" tabindex="-1" aria-hidden="true" style="left: -1000px; top: -1000px; opacity: 0; visibility: hidden;" role="menu" aria-labelledby="help-menu-button"><template shadowrootmode="open"><!---->
+      <ql-card elevation="3"><template shadowrootmode="open"><!---->
+      <div part="body" class="card   ">
+        <slot></slot>
+      </div>
+    </template>
+        <slot></slot>
+      </ql-card>
+    </template>
+<ql-menu-item data-analytics-action="opened_help" data-analytics-label="lab" label="Help Center" onclick="hallofmirrors.helpService.startHelp({&quot;productData&quot;:{&quot;userId&quot;:41332617},&quot;context&quot;:&quot;lab&quot;})" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <button type="button" class=" menu-item " role="menuitem" aria-label="Help Center" aria-busy="false">
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->Help Center<!--?-->
+        </button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item href="mailto:support@qwiklabs.com" label="Email support" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="mailto:support@qwiklabs.com" role="menuitem" class=" menu-item " aria-label="Email support">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->Email support<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item label="Send feedback" onclick="userfeedback.api.startFeedback(
+{
+&#39;productId&#39;: &#39;5080217&#39;,
+&#39;enableAnonymousFeedback&#39;: true,
+&#39;authuser&#39;: &#39;undefined&#39;,
+&#39;locale&#39;: &#39;en&#39;
+},
+{
+&#39;user_id&#39;: &#39;41332617&#39;,
+&#39;current_organization&#39;: &#39;6660&#39;
+})" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <button type="button" class=" menu-item " role="menuitem" aria-label="Send feedback" aria-busy="false">
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->Send feedback<!--?-->
+        </button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item label="Chat support" onclick="ql.chat.open()" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <button type="button" class=" menu-item " role="menuitem" aria-label="Chat support" aria-busy="false">
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->Chat support<!--?-->
+        </button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item href="https://reportingwidget.google.com/widget/54?cid=1&amp;url=https://www.cloudskillsboost.google/classrooms/26082/labs/223624?" label="Report Illegal Content" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://reportingwidget.google.com/widget/54?cid=1&amp;url=https://www.cloudskillsboost.google/classrooms/26082/labs/223624?" role="menuitem" class=" menu-item " aria-label="Report Illegal Content">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->Report Illegal Content<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+</ql-menu>
+
+<ql-icon-button class="mobile-hide" icon="language" id="language" label="Select your language preference" tip="Language" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-icon-button class=" ql-icon-button " data-aria-label="Select your language preference" data-aria-busy="false" value="" data-aria-haspopup="true" aria-controls=""><template shadowrootmode="open" shadowrootdelegatesfocus><!----><button id="button" class="icon-button  standard " aria-label="Select your language preference" aria-haspopup="true">
+        <!--?lit$238151522$--><md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <!--?lit$238151522$--><md-ripple aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <!--?lit$238151522$--><span class="icon"><slot></slot></span>
+        <!--?lit$238151522$-->
+        <!--?lit$238151522$--><span class="touch"></span>
+        <!--?lit$238151522$-->
+  </button></template>
+          <!--?lit$238151522$--><ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template><!--?lit$238151522$-->language</ql-icon>
+        </md-icon-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-icon-button>
+<ql-menu for="language" tabindex="-1" aria-hidden="true" style="left: -1000px; top: -1000px; opacity: 0; visibility: hidden;" role="menu" aria-labelledby="language"><template shadowrootmode="open"><!---->
+      <ql-card elevation="3"><template shadowrootmode="open"><!---->
+      <div part="body" class="card   ">
+        <slot></slot>
+      </div>
+    </template>
+        <slot></slot>
+      </ql-card>
+    </template>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="ar" href="/classrooms/26082/labs/223624?locale=ar" label="العربية‬‎" lang="ar" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=ar" role="menuitem" class=" menu-item " aria-label="العربية‬‎">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->العربية‬‎<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="de" href="/classrooms/26082/labs/223624?locale=de" label="Deutsch" lang="de" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=de" role="menuitem" class=" menu-item " aria-label="Deutsch">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->Deutsch<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="en" href="/classrooms/26082/labs/223624?locale=en" label="English" lang="en" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=en" role="menuitem" class=" menu-item " aria-label="English">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->English<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="es" href="/classrooms/26082/labs/223624?locale=es" label="español (Latinoamérica)" lang="es" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=es" role="menuitem" class=" menu-item " aria-label="español (Latinoamérica)">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->español (Latinoamérica)<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="fr" href="/classrooms/26082/labs/223624?locale=fr" label="français" lang="fr" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=fr" role="menuitem" class=" menu-item " aria-label="français">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->français<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="fr_CA" href="/classrooms/26082/labs/223624?locale=fr_CA" label="français (Canada)" lang="fr-CA" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=fr_CA" role="menuitem" class=" menu-item " aria-label="français (Canada)">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->français (Canada)<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="he" href="/classrooms/26082/labs/223624?locale=he" label="עברית" lang="he" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=he" role="menuitem" class=" menu-item " aria-label="עברית">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->עברית<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="id" href="/classrooms/26082/labs/223624?locale=id" label="bahasa Indonesia" lang="id" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=id" role="menuitem" class=" menu-item " aria-label="bahasa Indonesia">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->bahasa Indonesia<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="it" href="/classrooms/26082/labs/223624?locale=it" label="italiano" lang="it" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=it" role="menuitem" class=" menu-item " aria-label="italiano">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->italiano<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="ja" href="/classrooms/26082/labs/223624?locale=ja" label="日本語" lang="ja" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=ja" role="menuitem" class=" menu-item " aria-label="日本語">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->日本語<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="ko" href="/classrooms/26082/labs/223624?locale=ko" label="한국어" lang="ko" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=ko" role="menuitem" class=" menu-item " aria-label="한국어">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->한국어<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="pl" href="/classrooms/26082/labs/223624?locale=pl" label="polski" lang="pl" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=pl" role="menuitem" class=" menu-item " aria-label="polski">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->polski<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="pt_BR" href="/classrooms/26082/labs/223624?locale=pt_BR" label="português (Brasil)" lang="pt-BR" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=pt_BR" role="menuitem" class=" menu-item " aria-label="português (Brasil)">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->português (Brasil)<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="pt_PT" href="/classrooms/26082/labs/223624?locale=pt_PT" label="português (Portugal)" lang="pt-PT" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=pt_PT" role="menuitem" class=" menu-item " aria-label="português (Portugal)">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->português (Portugal)<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="ru" href="/classrooms/26082/labs/223624?locale=ru" label="русский" lang="ru" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=ru" role="menuitem" class=" menu-item " aria-label="русский">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->русский<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="tr" href="/classrooms/26082/labs/223624?locale=tr" label="Türkçe" lang="tr" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=tr" role="menuitem" class=" menu-item " aria-label="Türkçe">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->Türkçe<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="uk" href="/classrooms/26082/labs/223624?locale=uk" label="українська" lang="uk" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=uk" role="menuitem" class=" menu-item " aria-label="українська">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->українська<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="zh" href="/classrooms/26082/labs/223624?locale=zh" label="简体中文" lang="zh" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=zh" role="menuitem" class=" menu-item " aria-label="简体中文">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->简体中文<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+<ql-menu-item data-analytics-action="changed_locale" data-analytics-label="zh_TW" href="/classrooms/26082/labs/223624?locale=zh_TW" label="繁體中文" lang="zh-TW" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624?locale=zh_TW" role="menuitem" class=" menu-item " aria-label="繁體中文">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->繁體中文<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+</ql-menu>
+
+
+<ql-icon-button id="my_account" label="My account" tip="My account" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-icon-button class=" ql-icon-button " data-aria-label="My account" data-aria-busy="false" value="" data-aria-haspopup="true" aria-controls="my_account_menu"><template shadowrootmode="open" shadowrootdelegatesfocus><!----><button id="button" class="icon-button  standard " aria-label="My account" aria-haspopup="true">
+        <!--?lit$238151522$--><md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <!--?lit$238151522$--><md-ripple aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface"></div></template></md-ripple>
+        <!--?lit$238151522$--><span class="icon"><slot></slot></span>
+        <!--?lit$238151522$-->
+        <!--?lit$238151522$--><span class="touch"></span>
+        <!--?lit$238151522$-->
+  </button></template>
+          <!--?lit$238151522$--><ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template><!--?lit$238151522$--><slot></slot></ql-icon>
+        </md-icon-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+<ql-avatar><template shadowrootmode="open"><!---->
+      <ql-icon class="avatar" product="avatar_anonymous"><template shadowrootmode="open"><!---->
+      <img aria-hidden="true" src="https://www.gstatic.com/images/branding/product/2x/avatar_anonymous_512dp.png" width="40" height="40">
+      <!--?lit$238151522$--><!--?-->
+    </template>
+      </ql-icon>
+    </template></ql-avatar>
+</ql-icon-button>
+<ql-menu for="my_account" id="my_account_menu" tabindex="-1" aria-hidden="true" style="left: -1000px; top: -1000px; opacity: 0; visibility: hidden;" role="menu" aria-labelledby="my_account"><template shadowrootmode="open"><!---->
+      <ql-card elevation="3"><template shadowrootmode="open"><!---->
+      <div part="body" class="card   ">
+        <slot></slot>
+      </div>
+    </template>
+        <slot></slot>
+      </ql-card>
+    </template>
+<div class="my-account-menu">
+<ql-avatar class="l-mtl l-mbl" size="120"><template shadowrootmode="open"><!---->
+      <ql-icon class="avatar" product="avatar_anonymous"><template shadowrootmode="open"><!---->
+      <img aria-hidden="true" src="https://www.gstatic.com/images/branding/product/2x/avatar_anonymous_512dp.png" width="120" height="120">
+      <!--?lit$238151522$--><!--?-->
+    </template>
+      </ql-icon>
+    </template></ql-avatar>
+<div class="my-account-menu__user-info l-mbl">
+<h4 class="ql-title-medium">Somasundaram Sadasivamoorthy</h4>
+<p class="ql-body-medium text--light">somasundaram.sadasivamoorthy@fiserv.com</p>
+<p class="ql-body-medium text--light">
+</p>
+<a class="text--green ql-title-small" href="https://www.cloudskillsboost.google/my_account/payments"><ql-chip positive=""><template shadowrootmode="open"><!---->
+      <div part="body" class=" chip positive ">
+        <!--?lit$238151522$-->
+        <slot></slot>
+      </div>
+      <!--?lit$238151522$-->
+    </template>
+Organization License
+</ql-chip>
+</a></div>
+<div class="buttons l-mbl">
+<a class="button button--hairline" id="settings" href="https://www.cloudskillsboost.google/my_account/profile">Settings</a>
+</div>
+<ql-list class="groups l-mbl"><template shadowrootmode="open"><!----><slot></slot></template>
+<ql-list-item text="Member"><template shadowrootmode="open"><!---->
+      <div class="list-item has-text has-actions">
+        <div class="icon">
+          <slot name="icon">
+            <!--?lit$238151522$-->
+          </slot>
+        </div>
+
+        <div class="wrapper">
+          <div class="inner-wrapper">
+            <div class="text-content">
+              <p class="label">
+                <slot> <!--?lit$238151522$--> </slot>
+              </p>
+              <span class="text">
+                <slot name="text">
+                  <!--?lit$238151522$-->Member
+                </slot>
+              </span>
+            </div>
+
+            <div class="actions">
+              <slot name="actions"></slot>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+<div class="name ql-body-medium">
+Fiserv
+</div>
+<ql-icon-button id="membership-537249-button" label="More" slot="actions" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-icon-button class=" ql-icon-button " data-aria-label="More" data-aria-busy="false" value="" data-aria-haspopup="true" aria-controls=""><template shadowrootmode="open" shadowrootdelegatesfocus><!----><button id="button" class="icon-button  standard " aria-label="More" aria-haspopup="true">
+        <!--?lit$238151522$--><md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <!--?lit$238151522$--><md-ripple aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <!--?lit$238151522$--><span class="icon"><slot></slot></span>
+        <!--?lit$238151522$-->
+        <!--?lit$238151522$--><span class="touch"></span>
+        <!--?lit$238151522$-->
+  </button></template>
+          <!--?lit$238151522$--><ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template><!--?lit$238151522$--><slot></slot></ql-icon>
+        </md-icon-button>
+      </div>
+     <!--?lit$238151522$--> </template>more_vert</ql-icon-button>
+<ql-menu for="membership-537249-button" slot="actions" tabindex="-1" aria-hidden="true" style="left: -1000px; top: -1000px; opacity: 0; visibility: hidden;" role="menu" aria-labelledby="membership-537249-button"><template shadowrootmode="open"><!---->
+      <ql-card elevation="3"><template shadowrootmode="open"><!---->
+      <div part="body" class="card   ">
+        <slot></slot>
+      </div>
+    </template>
+        <slot></slot>
+      </ql-card>
+    </template>
+<ql-menu-item href="/my_account/organizations" label="Manage membership" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/my_account/organizations" role="menuitem" class=" menu-item " aria-label="Manage membership">
+        <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$-->Manage membership<!--?-->
+      </a>
+     <!--?lit$238151522$--> </template></ql-menu-item>
+</ql-menu>
+</ql-list-item>
+</ql-list>
+<hr>
+<ql-button data-analytics-action="clicked_sign_out" href="/users/sign_out" method="delete" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button default " data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+Sign Out
+</ql-button>
+<div class="privacy l-mtl">
+<a target="_blank" class="ql-label-medium text--light" href="https://www.cloudskillsboost.google/privacy_policy">Privacy</a>
+<span class="ql-label-medium text--light l-mls l-mrs">·</span>
+<a class="ql-label-medium text--light" href="https://www.cloudskillsboost.google/terms_of_service">Terms</a>
+</div>
+</div>
+</ql-menu>
+
+</div>
+</ql-toolbar>
+
+</div>
+</div>
+
+<nav class="nav-panel js-nav-panel">
+<div class="nav-panel__logo">
+<div class="custom-logo"><img alt="Fiserv" height="24" aria-label="Fiserv" src="./Resource Monitoring _ Google Cloud Skills Boost_files/PGyhmgS3zZncIEGywnx5UXsKwepRRFQ9BhAg_WHNrlQ="></div>
+</div>
+<nav class="ql-sidenav">
+<ql-sidenav-item href="/" icon="home" label="Dashboard" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/" class=" sidenav-item " aria-label="Dashboard">
+        <!--?lit$238151522$-->
+      <ql-icon class="arrow"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+      <ql-icon class="icon"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$-->home</slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+      <span class="label"><!--?lit$238151522$-->Dashboard</span>
+      <!--?lit$238151522$-->
+    
+      </a>
+     <!--?lit$238151522$--> </template></ql-sidenav-item>
+
+<ql-sidenav-item href="/catalog" icon="school" label="Explore" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/catalog" class=" sidenav-item " aria-label="Explore">
+        <!--?lit$238151522$-->
+      <ql-icon class="arrow"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+      <ql-icon class="icon"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$-->school</slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+      <span class="label"><!--?lit$238151522$-->Explore</span>
+      <!--?lit$238151522$-->
+    
+      </a>
+     <!--?lit$238151522$--> </template></ql-sidenav-item>
+
+<ql-sidenav-item href="/paths" icon="playlist_add_check" label="Paths" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/paths" class=" sidenav-item " aria-label="Paths">
+        <!--?lit$238151522$-->
+      <ql-icon class="arrow"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+      <ql-icon class="icon"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$-->playlist_add_check</slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+      <span class="label"><!--?lit$238151522$-->Paths</span>
+      <!--?lit$238151522$-->
+    
+      </a>
+     <!--?lit$238151522$--> </template></ql-sidenav-item>
+
+<ql-sidenav-item active="" href="/profile" icon="event_note" label="Profile" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/profile" class=" sidenav-item active " aria-label="Profile">
+        <!--?lit$238151522$-->
+      <ql-icon class="arrow"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+      <ql-icon class="icon"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$-->event_note</slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+      <span class="label"><!--?lit$238151522$-->Profile</span>
+      <!--?lit$238151522$-->
+    
+      </a>
+     <!--?lit$238151522$--> </template></ql-sidenav-item>
+
+<ql-sidenav-item href="/subscriptions" icon="subscriptions" label="Subscriptions" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <a href="https://www.cloudskillsboost.google/subscriptions" class=" sidenav-item " aria-label="Subscriptions">
+        <!--?lit$238151522$-->
+      <ql-icon class="arrow"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+      <ql-icon class="icon"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$-->subscriptions</slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+      <span class="label"><!--?lit$238151522$-->Subscriptions</span>
+      <!--?lit$238151522$-->
+    
+      </a>
+     <!--?lit$238151522$--> </template></ql-sidenav-item>
+
+</nav>
+
+</nav>
+<div class="nav-panel__overlay js-nav-toggle"></div>
+
+<main class="js-main" id="jump-content">
+<div class="l-main-wrapper" id="main-wrapper">
+
+
+
+
+<div class="lab-assessment__tab js-open-lab-assessment-panel">
+<button class="js-lab-assessment-total-score">
+—/100
+</button>
+</div>
+<div aria-labelledby="lab-assessment-checkpoint" class="lab-assessment__panel js-lab-assessment-panel" role="dialog">
+<div class="lab-assessment__panel__header">
+<h4 id="lab-assessment-checkpoint">Checkpoints</h4>
+<ql-icon-button class="js-close-lab-assessment-panel" icon="arrow_forward" label="Close dialog" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-icon-button class=" ql-icon-button " data-aria-label="Close dialog" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!----><button id="button" class="icon-button  standard " aria-label="Close dialog">
+        <!--?lit$238151522$--><md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <!--?lit$238151522$--><md-ripple aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <!--?lit$238151522$--><span class="icon"><slot></slot></span>
+        <!--?lit$238151522$-->
+        <!--?lit$238151522$--><span class="touch"></span>
+        <!--?lit$238151522$-->
+  </button></template>
+          <!--?lit$238151522$--><ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template><!--?lit$238151522$-->arrow_forward</ql-icon>
+        </md-icon-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-icon-button>
+</div>
+<div class="lab-assessment__step">
+<p class="lab-assessment__step__title" id="lab-assessment-step-title">
+Create custom dashboard
+</p>
+<div class="lab-assessment__step__action">
+<ql-button class="js-show-run-step-button" description="Create custom dashboard" step_no="1" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$--><p id="button-description" hidden=""><!--?lit$238151522$-->Create custom dashboard</p>
+        <md-filled-button class=" ql-button default " aria-describedby="button-description" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+Check my progress
+</ql-button>
+<p class="lab-assessment__step__score">
+<span class="js-assessment-step-score-1">
+</span>
+/ 25
+</p>
+</div>
+</div>
+
+<div class="lab-assessment__step">
+<p class="lab-assessment__step__title" id="lab-assessment-step-title">
+Create alerting policies
+</p>
+<div class="lab-assessment__step__action">
+<ql-button class="js-show-run-step-button" description="Create alerting policies" step_no="2" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$--><p id="button-description" hidden=""><!--?lit$238151522$-->Create alerting policies</p>
+        <md-filled-button class=" ql-button default " aria-describedby="button-description" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+Check my progress
+</ql-button>
+<p class="lab-assessment__step__score">
+<span class="js-assessment-step-score-2">
+</span>
+/ 25
+</p>
+</div>
+</div>
+
+<div class="lab-assessment__step">
+<p class="lab-assessment__step__title" id="lab-assessment-step-title">
+Create Resource Group
+</p>
+<div class="lab-assessment__step__action">
+<ql-button class="js-show-run-step-button" description="Create Resource Group" step_no="3" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$--><p id="button-description" hidden=""><!--?lit$238151522$-->Create Resource Group</p>
+        <md-filled-button class=" ql-button default " aria-describedby="button-description" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+Check my progress
+</ql-button>
+<p class="lab-assessment__step__score">
+<span class="js-assessment-step-score-3">
+</span>
+/ 25
+</p>
+</div>
+</div>
+
+<div class="lab-assessment__step">
+<p class="lab-assessment__step__title" id="lab-assessment-step-title">
+Create uptime check
+</p>
+<div class="lab-assessment__step__action">
+<ql-button class="js-show-run-step-button" description="Create uptime check" step_no="4" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$--><p id="button-description" hidden=""><!--?lit$238151522$-->Create uptime check</p>
+        <md-filled-button class=" ql-button default " aria-describedby="button-description" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+Check my progress
+</ql-button>
+<p class="lab-assessment__step__score">
+<span class="js-assessment-step-score-4">
+</span>
+/ 25
+</p>
+</div>
+</div>
+
+</div>
+<ql-drawer-container class="js-lab-state" data-analytics-payload="{&quot;label&quot;:&quot;Resource Monitoring&quot;,&quot;lab_name&quot;:&quot;Resource Monitoring&quot;,&quot;classroom_name&quot;:null,&quot;deployment&quot;:&quot;google-run&quot;}" data-credits="0.0" data-focus-id="223624" data-lab-duration="3600" data-organization-license-required="#&lt;Organization:0x00007ea0c73c4060&gt;" data-organization-license-valid="" data-parent="classroom" data-recaptcha-enabled="" id="lab-container"><template shadowrootmode="open"><!---->
+      <slot name="drawer"></slot>
+      <div class="content" style="margin-left: 0px; margin-right: 0px;">
+        <slot name="drawer-content"></slot>
+        <slot></slot>
+      </div>
+      <!--?lit$238151522$-->
+    </template>
+<ql-drawer id="terminal-drawer" slot="drawer" tabindex="-1" aria-hidden="true" role="region" mode="side" style="visibility: hidden;"><template shadowrootmode="open"><!---->
+      <!--?lit$238151522$-->
+      <slot></slot>
+    </template>
+<iframe allow="clipboard-read" class="terminal" id="embedded-resource" src="./Resource Monitoring _ Google Cloud Skills Boost_files/saved_resource(3).html"></iframe>
+</ql-drawer>
+<ql-drawer-content class="js-lab-wrapper" id="lab-content" slot="drawer-content"><template shadowrootmode="open"><!----><slot></slot></template>
+<ql-drawer-container id="lab-content-container"><template shadowrootmode="open"><!---->
+      <slot name="drawer"></slot>
+      <div class="content" style="margin-left: 320px; margin-right: 240px;">
+        <slot name="drawer-content"></slot>
+        <slot></slot>
+      </div>
+      <!--?lit$238151522$-->
+    </template>
+<ql-drawer id="control-panel-drawer" open="" slot="drawer" width="320" aria-hidden="false" role="region" mode="side" style="width: 320px; visibility: visible;"><template shadowrootmode="open"><!---->
+      <!--?lit$238151522$-->
+      <slot></slot>
+    </template>
+
+<ql-lab-control-panel class="ql-lab-control-panel__max-height control-panel js-lab-control-panel onramp" connectionfiles="[]" labcontrolbutton="{&quot;disabled&quot;:false,&quot;pending&quot;:false,&quot;running&quot;:false}" labdetails="[]" labtimer="{&quot;ticking&quot;:false,&quot;secondsRemaining&quot;:3600}" studentresources="[]"><template shadowrootmode="open"><!---->
+      <div class="control-panel-container control-panel-container--no-shrink">
+        <!--?lit$238151522$-->
+        <div class="control-panel-section control-panel-section--2up">
+          <!--?lit$238151522$-->
+      <ql-lab-control-button id="lab-control-button"><template shadowrootmode="open"><!---->
+      <ql-button type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button positive " data-aria-label="Start Lab, you have 1 hours to complete this lab." data-aria-expanded="false" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" aria-label="Start Lab, you have 1 hours to complete this lab." aria-expanded="false">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+        <!--?lit$238151522$-->Start Lab
+      </ql-button>
+    </template>
+      </ql-lab-control-button>
+     <!--?lit$238151522$-->
+      <ql-lab-timer id="lab-timer"><template shadowrootmode="open"><!---->
+        <ql-timer><template shadowrootmode="open"><!---->
+      <span aria-atomic="true" role="timer" class=" timer hhmmss " datetime="PT1H">
+        <time><!--?lit$238151522$-->01:00:00</time>
+      </span>
+    </template>
+        </ql-timer>
+      </template>
+      </ql-lab-timer>
+    
+        </div>
+      
+        <slot name="recaptcha"></slot>
+      </div>
+      <div class="control-panel-container">
+        <!--?lit$238151522$-->
+        <!--?lit$238151522$-->
+      </div>
+      <!--?lit$238151522$-->
+    </template>
+<script src="./Resource Monitoring _ Google Cloud Skills Boost_files/api(1).js"></script>
+        <script>
+          // Define function so that we can call it again later if we need to reset it
+          // This executes reCAPTCHA and then calls our callback.
+          function executeRecaptchaForStartLab() {
+            grecaptcha.ready(function() {
+              grecaptcha.execute('6LeVI8IUAAAAAJNdox5eTkYrw9SbvhZ1TFyv3iHr', {action: 'start_lab'}).then(function(token) {
+                setInputWithRecaptchaResponseTokenForStartLab('g-recaptcha-response-data-start-lab', token)
+              });
+            });
+          };
+          // Invoke immediately
+          executeRecaptchaForStartLab()
+
+          // Async variant so you can await this function from another async function (no need for
+          // an explicit callback function then!)
+          // Returns a Promise that resolves with the response token.
+          async function executeRecaptchaForStartLabAsync() {
+            return new Promise((resolve, reject) => {
+             grecaptcha.ready(async function() {
+                resolve(await grecaptcha.execute('6LeVI8IUAAAAAJNdox5eTkYrw9SbvhZ1TFyv3iHr', {action: 'start_lab'}))
+              });
+            })
+          };
+
+                  var setInputWithRecaptchaResponseTokenForStartLab = function(id, token) {
+          var element = document.getElementById(id);
+          if (element !== null) element.value = token;
+        }
+
+        </script>
+<input type="hidden" name="g-recaptcha-response-data[start_lab]" id="g-recaptcha-response-data-start-lab" data-sitekey="6LeVI8IUAAAAAJNdox5eTkYrw9SbvhZ1TFyv3iHr" class="g-recaptcha g-recaptcha-response " style="" value="03AFcWeA4UyndzFhAwsvOrvP1gKBGv9C3fZSajobzXHGNc0u4xhxK3jjtPhU6t7VcaNA8EnHCUoQPm8cKWVbSrbUMpc6GP2gkfZPzb8eGVrqHiami3QFmDU5kzP_a1L6RbyhS-wzDBLoaTHD03J5b5a_uH3YNumNW3L-IkbDz2WwIqHpcV8ep2pPs1ldVjQkKB3hTQLMG-BQZy-M3sLu8dwuExu_xY5cJRkupH6YYFa0n1-oFllyoObJcBNsXgcHIrqqLEBOJv_aovrpiJ5Pz3_GskwQwBF8V99aEHYtqUc0qBeYmBkZ5b7VsOmw9d8b8FDEl6rqa-NmEXyZZhEmHu7hEMwbd_JVlpsfulUxfJOaZQTXI85sVLVvkgvvarz6n8Ovd2PS4COrfud_XBRd2NMhcKk162FCMKJNJ5UTLnwQkae7BnVLtHO9DWi7VF_K5_oXzts9JTvrczFTvMgILL4K1Ly0wId-y7erAZ3BDsAy7ZbdTcD1tAcCD92hHOBjOM7B8YAcfyAavv5Cw8kK0iognYv0d8UeFsQTLWArn0b7DWNplyHX4mNQO6C6yb79zkgt4JGnh0ItAPIkEF2G4sbkmMgeZRs6TscNYDSi4sO4hdWdCLHvklmv-8sNmit1sGgJwMb0gp6pYv1zFRU99ajdi7ij20_NgsWmK5GIXmOWfi5LZcfDwvgVVpgmJ051O8-6jJ0aWUKkcODJV2rLpXvNqzv_Sr8ZIRR_x31AI-3kzlsLRdVSjXwJVdI3QVfNUD5Qf0-4iMLXRZqO6I9onOR18NWZ7BCqO1jY44m24HfyV1lQoyPMo21uatJve5qopLbkIK-K0o5eSFWWkzGHy-OU67pV3NxElF971IrEOd8Dxnxv81ZlZp-m3Bf9msR6DXPH6wwMLGNcEsaYAk9aMT3lfAj3Wir2EHJOTnXHnxU6ELk6iH1FoKNKVF_tclt7PPTrYSuzvKz4xHrMEKrk6Wt-_jFG_XWhPT2jf9ySZRP-gOHXLgBQgwz4edaXidJz44XnIkjzXD0wEq8ry1yG_7RqX2f-lhLMMC8w0HuBK_q78Bhq0zNoOZ8Y8GA6CoSOD9TsnAy0p6onkIn9hKPfTFXkwiHGVrOEsmwm2MpuXboDS3foKN3QDx1fLIAN8mRWm5u9JmnTalHd4-GJaABN1uieHliFaamW04VxR3XoJ08M9LuEz3V9zXXUfqRO7kARAr9GhWVCtOW4trzbxDsQnPBfeebU5Nz78QFUpWvZih7PmYZj8o3DJmRzuPjL48LXrEyiekIQXup1aVAiPNC-OnxIccmGerJaFcyeuK3y2yOsXLhL0w-az8cOyAs-LBdZpNZzYJ9Wyp7evcEFRcX9cI3K-npjYaQvCWqJ2wLDx2j9Ph8silVbAUjugpl8OhDfPhEQbxqF1r0n3bq5Dwu_-KXs0zjYr70Vb-kFf19zdkpbd8HAa-Z2btd3U1Hsww9UfyeKbrGImNJljlmDHO27qcFRXHYaW1w8wsk9tbt4za5qFsIaxU0hPHBnKJQMTKbDD6FWSDVZQhGEPj7nVrbtEJYwHMxstRpfalvxu0jTIS_6tLAYR0iu9R_OkHyGB1zD1wK7ROr5Rd7HRIQKxBmnY6uMYZNYGIdxMieTk0MhjI7ChwA0i1-nwxHkM5WKt4Oc80lIhFphH5iAQ6Fk5Lgty_Et11OUJzbW8MFW14d5gk9irYv4nvLHva6Mre2MVbQqqpQUyOxtlj0OKPFYRbvIcnrz98lBJ7Lf_rlaY_qxPY3mavuWZlixTzgM4Ulfs6F_axigj08jLOb4FAl122mAx0teDm_LgpULgDFtcfstD9q5oy0pben6he7lNBPN8qnVdjc9nm37uu9rqpjHwYkMeWDoVK5KKoGFwr9K9Kvb6OjCUhopYNlI6marzuM7Ylf7XYOhREs-4ajDBV5zQenLBMk1RrQhceb7iFpm-HTZLUuls278ErpB81SWEwICTvW9CJZR3JYc1rwqBw2dUwza5EB3mjm8j6202Umgzp13uHCCtmHrFh0LqzXilPqT_uZt7qLsPDYAaUVSrMdc0I_Bhvr3tqYd5Sx_-aZrQcQufq-PTaaU9JKrctm9XH9JjHGltzjTMgx9jGI0GnRanOgRHQR8_n_6SncmUH4FE4wvTnbsi_M3DLnKCqszpyA0KpSh1GdJhrA2QGrkV56JV5jJer1DidSVtjhQ57Pw"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-wh64qa2a54gp" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./Resource Monitoring _ Google Cloud Skills Boost_files/anchor.html"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></input>
+
+<div aria-live="polite" class="hidden" id="recaptcha-v2-start-lab" slot="recaptcha">
+<script src="./Resource Monitoring _ Google Cloud Skills Boost_files/api(2).js" async="" defer=""></script>
+<div data-sitekey="6LeOI8IUAAAAAPkHlMAE9NReCD_1WD81iYlBlCnV" data-callback="recaptchaComplete" data-expired-callback="expireV2Token" class="g-recaptcha "><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-rx5u6n1rxnhd" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./Resource Monitoring _ Google Cloud Skills Boost_files/anchor(1).html"></iframe></div><textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Resource Monitoring _ Google Cloud Skills Boost_files/saved_resource(4).html"></iframe></div>
+          <noscript>
+            <div>
+              <div style="width: 302px; height: 422px; position: relative;">
+                <div style="width: 302px; height: 422px; position: absolute;">
+                  <iframe
+                    src="https://www.recaptcha.net/recaptcha/api/fallback?k=6LeOI8IUAAAAAPkHlMAE9NReCD_1WD81iYlBlCnV"
+                    name="ReCAPTCHA"
+                    style="width: 302px; height: 422px; border-style: none; border: 0; overflow: hidden;">
+                  </iframe>
+                </div>
+              </div>
+              <div style="width: 300px; height: 60px; border-style: none;
+                bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
+                background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+                <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                  class="g-recaptcha-response"
+                  style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
+                  margin: 10px 25px; padding: 0px; resize: none;">
+                </textarea>
+              </div>
+            </div>
+          </noscript>
+
+</div>
+</ql-lab-control-panel></ql-drawer>
+<ql-drawer-content id="lab-instructions" slot="drawer-content"><template shadowrootmode="open"><!----><slot></slot></template>
+<div class="lab-content-container">
+<div class="alert alert--fake js-alert">
+<p class="alert__message js-alert-message" role="alert"></p>
+<ql-icon-button class="alert__close js-alert-close" icon="clear" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-icon-button class=" ql-icon-button " data-aria-label="clear" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!----><button id="button" class="icon-button  standard " aria-label="clear">
+        <!--?lit$238151522$--><md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <!--?lit$238151522$--><md-ripple aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <!--?lit$238151522$--><span class="icon"><slot></slot></span>
+        <!--?lit$238151522$-->
+        <!--?lit$238151522$--><span class="touch"></span>
+        <!--?lit$238151522$-->
+  </button></template>
+          <!--?lit$238151522$--><ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template><!--?lit$238151522$-->clear</ql-icon>
+        </md-icon-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-icon-button>
+<iframe class="l-ie-iframe-fix" tabindex="-1" src="./Resource Monitoring _ Google Cloud Skills Boost_files/saved_resource(5).html"></iframe>
+</div>
+<div class="lab-content__renderable-instructions js-lab-content">
+<div class="lab-preamble">
+<h1 class="ql-display-large lab-preamble__title">
+Resource Monitoring
+</h1>
+<div class="lab-preamble__details ql-title-medium">
+<span>
+<ql-icon icon="experiment"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$-->experiment</slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+Lab
+</span>
+<span>
+<ql-icon icon="schedule"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$-->schedule</slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+1 hour
+</span>
+<span>
+<ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template>universal_currency_alt</ql-icon>
+1 Credit
+</span>
+<span>
+<ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template>show_chart</ql-icon>
+Introductory
+</span>
+</div>
+<div class="lab__rating">
+<a aria-label="Lab Reviews" href="https://www.cloudskillsboost.google/focuses/223624/reviews?parent=classroom"><div class="rateit" data-rateit-readonly="true" data-rateit-value="4.5951"><div class="rateit-reset" style="display: none;"></div><div class="rateit-range" style="width: 80px; height: 16px;"><div class="rateit-selected" style="height: 16px; width: 73.5216px;"></div><div class="rateit-hover" style="height:16px"></div></div></div>
+
+</a><ql-button aria-label="Rate Lab" id="rate-lab-btn" label="Rate Lab" text="" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-text-button class=" ql-button default " data-aria-label="Rate Lab" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$-->
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" aria-label="Rate Lab">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$-->Rate Lab<!--?--><!--?-->
+        </md-text-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-button>
+</div>
+<div class="lab-preamble__ai_notice">
+<ql-infobox><template shadowrootmode="open"><!---->
+      <aside part="aside">
+        <slot></slot>
+      </aside>
+    </template>
+<span>
+<ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template>info</ql-icon>
+This lab may incorporate AI tools to support your learning.
+</span>
+</ql-infobox>
+</div>
+</div>
+<div class="lab-outline-mobile" id="outline_mobile">
+<div class="header">
+<div class="ql-label-small">Lab instructions and tasks</div>
+<ql-toggle-button expandable="" for="outline_mobile" officon="expand_less" onicon="expand_more" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-icon-button class=" ql-icon-button " data-aria-label="expand_less" data-aria-busy="false" data-aria-pressed="false" data-aria-expanded="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!----><button id="button" class="icon-button  standard " aria-label="expand_less" aria-expanded="false">
+        <!--?lit$238151522$--><md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <!--?lit$238151522$--><md-ripple aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <!--?lit$238151522$--><span class="icon"><slot></slot></span>
+        <!--?lit$238151522$-->
+        <!--?lit$238151522$--><span class="touch"></span>
+        <!--?lit$238151522$-->
+  </button></template>
+          <!--?lit$238151522$--><ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template><!--?lit$238151522$-->expand_less</ql-icon>
+        </md-icon-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-toggle-button>
+</div>
+<ul class="lab-content__outline">
+<li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step1">Overview</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step2">Objectives</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step3">Task 1. Create a Cloud Monitoring workspace</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step4">Task 2. Custom dashboards</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step5">Task 3. Alerting policies</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step6">Task 4. Resource groups</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step7">Task 5. Uptime monitoring</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step8">Task 6. Disable the alert</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step9">Task 7. Review</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step10">End your lab</a></li>
+</ul>
+</div>
+<div class="instruction-signed-in-card">
+<div class="lab-mobile-card card elevation-2">
+<img src="./Resource Monitoring _ Google Cloud Skills Boost_files/send_link_image-5f833bd146929134c423c83e4bb520429ce72180.png">
+<div class="ql-title-large">This content is not yet optimized for mobile devices.</div>
+<div class="ql-body-large">For the best experience, please visit us on a desktop computer using a link sent by email.</div>
+<ql-button href="/focuses/223624/resume_on_desktop_email?parent=classroom" icon="link" label="Send link" method="post" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button default " data-aria-label="Send link" data-aria-busy="false" value="" has-icon=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" aria-label="Send link">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$-->
+        <ql-icon slot="icon" class="mdc-button__icon" aria-hidden="true"><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$--></slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template>
+          <!--?lit$238151522$-->link
+        </ql-icon>
+       <!--?lit$238151522$--><!--?lit$238151522$-->Send link<!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-button>
+</div>
+
+</div>
+
+<div class="markdown-lab-instructions js-markdown-instructions" id="markdown-lab-instructions">
+
+<h2 id="step1">Overview</h2>
+<p>In this lab, you learn how to use Cloud Monitoring to gain insight into applications that run on Google Cloud.</p>
+<h2 id="step2">Objectives</h2>
+<p>In this lab, you learn how to perform the following tasks:</p>
+<ul>
+<li>Explore Cloud Monitoring by creating a custom dashboard with charts</li>
+<li>Create alerts with multiple conditions</li>
+<li>Create resource groups</li>
+<li>Create uptime checks</li>
+</ul>
+<h3>Setup</h3>
+<p>For each lab, you get a new Google Cloud project and set of resources for a fixed time at no cost.</p>
+<ol>
+<li>
+<p>Sign in to Qwiklabs using an <strong>incognito window</strong>.</p>
+</li>
+<li>
+<p>Note the lab's access time (for example, <code>1:15:00</code>), and make sure you can finish within that time.<br>
+There is no pause feature. You can restart if needed, but you have to start at the beginning.</p>
+</li>
+<li>
+<p>When ready, click <strong>Start lab</strong>.</p>
+</li>
+<li>
+<p>Note your lab credentials (<strong>Username</strong> and <strong>Password</strong>). You will use them to sign in to the Google Cloud Console.</p>
+</li>
+<li>
+<p>Click <strong>Open Google Console</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Use another account</strong> and copy/paste credentials for <strong>this</strong> lab into the prompts.<br>
+If you use other credentials, you'll receive errors or <strong>incur charges</strong>.</p>
+</li>
+<li>
+<p>Accept the terms and skip the recovery resource page.</p>
+</li>
+</ol>
+<aside class="warning"><p><strong>Note:</strong> Do not click <strong>End Lab</strong> unless you have finished the lab or want to restart it. This clears your work and removes the project.
+  </p>
+</aside>
+
+<h2 id="step3">Task 1. Create a Cloud Monitoring workspace</h2>
+<h3>Verify resources to monitor</h3>
+<p>Three VM instances have been created for you that you will monitor.</p>
+<ul>
+<li>In the Cloud Console, on the <strong>Navigation menu</strong> (<img alt="Navigation menu icon" src="./Resource Monitoring _ Google Cloud Skills Boost_files/tkgw1TDgj4Q+YKQUW4jUFd0O5OEKlUMBRYbhlCrF0WY=" title="Navigation menu">), click <strong>Compute Engine</strong> &gt; <strong>VM instances</strong>. Notice the <strong>nginxstack-1</strong>, <strong>nginxstack-2</strong> and <strong>nginxstack-3</strong> instances.</li>
+</ul>
+<h3>Create a Monitoring workspace</h3>
+<p>You will now setup a Monitoring workspace that's tied to your Google Cloud Project. The following steps create a new account that has a free trial of Monitoring.</p>
+<ol>
+<li>
+<p>On the Google Cloud console title bar, type <strong>Monitoring</strong> in the Search field, then click <strong>Monitoring</strong> in the Products &amp; Page section.</p>
+</li>
+<li>
+<p>Wait for your workspace to be provisioned.</p>
+</li>
+</ol>
+<p>When the Monitoring dashboard opens, your workspace is ready.</p>
+<p><img alt="The Monitoring dashboard open on the Overview page" src="./Resource Monitoring _ Google Cloud Skills Boost_files/LIBmZ+AnCqX21tq98JF22G65oH4hXsEAzHfoh1ZqpqE="></p>
+<p><ql-multiple-select-probe answerindices="[0]" optiontitles="[
+&quot;It is at the base of site reliability which incorporates aspects of software engineering and applies that to operations whose goals are to create ultra-scalable and highly reliable software systems.&quot;,
+&quot;Monitoring is important to ensure that Google complies with regulatory requirements defined by both government and industry security bodies.&quot;,
+&quot;Google uses monitoring to ensure they have all the important metrics for reporting purposes to customers and the other interested bodies.  The number of reports requires the collection and reporting to be both broad and deep.&quot;
+]" shuffle="" stem="Why is monitoring important to Google?"><template shadowrootmode="open"><!---->
+      <ql-assessment aria-label=""><template shadowrootmode="open"><!---->
+      <div class="assessment-left">
+        <ql-assessment-status><template shadowrootmode="open"><!---->
+      <div class="status" role="progressbar" aria-live="assertive" status="uninitialized" tooltip="" aria-hidden="true" aria-valuenow="0" aria-label=""><!--?lit$238151522$--></div>
+    </template>
+        </ql-assessment-status>
+      </div>
+
+      <div class="assessment-right">
+        <div class="assessment-content">
+          <slot></slot>
+        </div>
+
+        <!--?lit$238151522$-->
+      </div>
+    </template>
+        <div class="item-container"> <!--?lit$238151522$-->
+      <ql-multiple-select-item><template shadowrootmode="open"><!---->
+      <fieldset>
+        <legend>
+          <ql-item-stem><template shadowrootmode="open"><!----> <slot></slot> </template><!--?lit$238151522$--><!--?lit$238151522$-->Why is monitoring important to Google?<!--?--></ql-item-stem>
+        </legend>
+        <!--?lit$238151522$--> <!--?lit$238151522$--><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         It is at the base of site reliability which incorporates aspects of software engineering and applies that to operations whose goals are to create ultra-scalable and highly reliable software systems. 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         It is at the base of site reliability which incorporates aspects of software engineering and applies that to operations whose goals are to create ultra-scalable and highly reliable software systems. 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->It is at the base of site reliability which incorporates aspects of software engineering and applies that to operations whose goals are to create ultra-scalable and highly reliable software systems.<!--?-->
+      </ql-checkbox>
+    <!----><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         Monitoring is important to ensure that Google complies with regulatory requirements defined by both government and industry security bodies. 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         Monitoring is important to ensure that Google complies with regulatory requirements defined by both government and industry security bodies. 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->Monitoring is important to ensure that Google complies with regulatory requirements defined by both government and industry security bodies.<!--?-->
+      </ql-checkbox>
+    <!----><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         Google uses monitoring to ensure they have all the important metrics for reporting purposes to customers and the other interested bodies.  The number of reports requires the collection and reporting to be both broad and deep. 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         Google uses monitoring to ensure they have all the important metrics for reporting purposes to customers and the other interested bodies.  The number of reports requires the collection and reporting to be both broad and deep. 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->Google uses monitoring to ensure they have all the important metrics for reporting purposes to customers and the other interested bodies.  The number of reports requires the collection and reporting to be both broad and deep.<!--?-->
+      </ql-checkbox>
+    <!---->
+      </fieldset>
+    </template>
+      </ql-multiple-select-item>
+     </div>
+
+        <!--?lit$238151522$-->
+      <ql-button aria-label="Submit" type="button" disabled=""><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="true">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button default " disabled="" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" disabled="">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+        <!--?lit$238151522$-->Submit
+      </ql-button>
+    
+      </ql-assessment>
+    </template>
+</ql-multiple-select-probe></p>
+<h2 id="step4">Task 2. Custom dashboards</h2>
+<h3>Create a dashboard</h3>
+<ol>
+<li>In the left pane, click <strong>Dashboards</strong>.</li>
+<li>Click <strong>+Create Dashboard</strong>.</li>
+<li>For <strong>New Dashboard Name</strong>, type <strong>My Dashboard</strong>.</li>
+</ol>
+<h3><strong>Add a chart</strong></h3>
+<ol>
+<li>
+<p>Click <strong>Add Widget</strong>,and then select <strong>Line</strong>.</p>
+</li>
+<li>
+<p>For <strong>Widget Title</strong>, give your chart a name (you can revise this before you save based on the selections you make).</p>
+</li>
+<li>
+<p>Type <strong>CPU utilization</strong> or <strong>CPU usage</strong> in Metric field dropdown, Click <strong>VM Instance &gt; Instance</strong>. Select <code>CPU utilization</code> or <code>CPU usage</code> and click <strong>Apply</strong>.</p>
+<ql-infobox><template shadowrootmode="open"><!---->
+      <aside part="aside">
+        <slot></slot>
+      </aside>
+    </template><strong>Note:</strong> Uncheck <code>Active</code> if you are unable to find the CPU utilization</ql-infobox>
+</li>
+<li>
+<p>Click <strong>+ Add Filter</strong> and explore the various options.</p>
+</li>
+<li>
+<p>Click <strong>Apply</strong> to create the chart.</p>
+</li>
+</ol>
+<h3>Metrics Explorer</h3>
+<p>The <strong>Metrics Explorer</strong> allows you to examine resources and metrics without having to create a chart on a dashboard. Try to recreate the chart you just created using the <strong>Metrics Explorer</strong>.</p>
+<ol>
+<li>In the left pane, click <strong>Metrics explorer</strong>.</li>
+<li>Select a Metric from the dropdown.</li>
+<li>Explore the various options and try to recreate the chart you created earlier.</li>
+</ol>
+<ql-infobox><template shadowrootmode="open"><!---->
+      <aside part="aside">
+        <slot></slot>
+      </aside>
+    </template><strong>Note: </strong>Not all metrics are currently available on the Metrics Explorer, so you might not be able to find the exact metric you used on the previous step.</ql-infobox>
+<p>Click <strong>Check my progress</strong> to verify the objective.
+<ql-activity-tracking step="1"><template shadowrootmode="open"><!---->
+      <ql-assessment aria-label=""><template shadowrootmode="open"><!---->
+      <div class="assessment-left">
+        <ql-assessment-status><template shadowrootmode="open"><!---->
+      <div class="status" role="progressbar" aria-live="assertive" status="uninitialized" tooltip="" aria-hidden="true" aria-valuenow="0" aria-label=""><!--?lit$238151522$--></div>
+    </template>
+        </ql-assessment-status>
+      </div>
+
+      <div class="assessment-right">
+        <div class="assessment-content">
+          <slot></slot>
+        </div>
+
+        <!--?lit$238151522$-->
+      </div>
+    </template>
+        <p>
+          <slot><!--?lit$238151522$-->I completed this step.</slot>
+        </p>
+
+        <ql-button aria-label="Check my progress" type="button" disabled=""><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="true">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button default " disabled="" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" disabled="">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+          <!--?lit$238151522$-->Check my progress
+        </ql-button>
+      </ql-assessment>
+    </template>
+Create custom dashboard
+</ql-activity-tracking></p>
+<h2 id="step5">Task 3. Alerting policies</h2>
+<p><ql-multiple-select-probe answerindices="[3]" optiontitles="[
+&quot;Configure alerting on symptoms and not necessarily causes.&quot;,
+&quot;Use multiple notification channels so you avoid a single point of failure.&quot;,
+&quot;Customize your alerts to the audience need.&quot;,
+&quot;Report all noise to ensure all data points are presented.&quot;
+]" shuffle="" stem="What is not a recommended best practice for alerts?"><template shadowrootmode="open"><!---->
+      <ql-assessment aria-label=""><template shadowrootmode="open"><!---->
+      <div class="assessment-left">
+        <ql-assessment-status><template shadowrootmode="open"><!---->
+      <div class="status" role="progressbar" aria-live="assertive" status="uninitialized" tooltip="" aria-hidden="true" aria-valuenow="0" aria-label=""><!--?lit$238151522$--></div>
+    </template>
+        </ql-assessment-status>
+      </div>
+
+      <div class="assessment-right">
+        <div class="assessment-content">
+          <slot></slot>
+        </div>
+
+        <!--?lit$238151522$-->
+      </div>
+    </template>
+        <div class="item-container"> <!--?lit$238151522$-->
+      <ql-multiple-select-item><template shadowrootmode="open"><!---->
+      <fieldset>
+        <legend>
+          <ql-item-stem><template shadowrootmode="open"><!----> <slot></slot> </template><!--?lit$238151522$--><!--?lit$238151522$-->What is not a recommended best practice for alerts?<!--?--></ql-item-stem>
+        </legend>
+        <!--?lit$238151522$--> <!--?lit$238151522$--><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         Configure alerting on symptoms and not necessarily causes. 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         Configure alerting on symptoms and not necessarily causes. 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->Configure alerting on symptoms and not necessarily causes.<!--?-->
+      </ql-checkbox>
+    <!----><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         Report all noise to ensure all data points are presented. 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         Report all noise to ensure all data points are presented. 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->Report all noise to ensure all data points are presented.<!--?-->
+      </ql-checkbox>
+    <!----><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         Customize your alerts to the audience need. 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         Customize your alerts to the audience need. 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->Customize your alerts to the audience need.<!--?-->
+      </ql-checkbox>
+    <!----><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         Use multiple notification channels so you avoid a single point of failure. 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         Use multiple notification channels so you avoid a single point of failure. 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->Use multiple notification channels so you avoid a single point of failure.<!--?-->
+      </ql-checkbox>
+    <!---->
+      </fieldset>
+    </template>
+      </ql-multiple-select-item>
+     </div>
+
+        <!--?lit$238151522$-->
+      <ql-button aria-label="Submit" type="button" disabled=""><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="true">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button default " disabled="" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" disabled="">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+        <!--?lit$238151522$-->Submit
+      </ql-button>
+    
+      </ql-assessment>
+    </template>
+</ql-multiple-select-probe></p>
+<h3>Create an alert and add the first condition</h3>
+<ol>
+<li>
+<p>In the left pane, select <strong>Alerting</strong>.</p>
+</li>
+<li>
+<p>Click <strong>+ Create Policy</strong>.</p>
+</li>
+<li>
+<p>Click on <strong>Select a metric</strong> dropdown. Uncheck the <strong>Active</strong> option.</p>
+</li>
+<li>
+<p>Type <strong>VM Instance</strong> in filter by resource and metric name and click on <strong>VM Instance &gt; Instance</strong>. Select <strong>CPU usage or CPU Utilization</strong> and click <strong>Apply</strong>.</p>
+<ql-infobox><template shadowrootmode="open"><!---->
+      <aside part="aside">
+        <slot></slot>
+      </aside>
+    </template><strong>Note: </strong>If you cannot locate the <strong>VM Instance</strong> resource type, you might have to refresh the page.</ql-infobox>
+</li>
+<li>
+<p>Set <strong>Rolling windows</strong> to 1 min.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>. Set Threshold position to <strong>Above Threshold</strong> and set <strong>20</strong> as your <strong>Threshold value</strong>.</p>
+</li>
+</ol>
+<h3>Add a second condition</h3>
+<ol>
+<li>Click <strong>+ADD ALERT CONDITION</strong>.</li>
+<li>Repeat the steps above to specify the second condition for this policy. For example, repeat the condition for a different instance. Click <strong>Next</strong>.</li>
+<li>In <strong>Multi-condition trigger</strong>, select <strong>All conditions are met</strong>.</li>
+<li>Click <strong>Next</strong>.</li>
+</ol>
+<h3>Configure notifications and finish the alerting policy</h3>
+<ol>
+<li>
+<p>Click on the dropdown arrow next to <strong>Notification Channels</strong>, then click on <strong>Manage Notification Channels</strong>.</p>
+<p>The <strong>Notification channels</strong> page will open in a new tab.</p>
+</li>
+<li>
+<p>Scroll down the page and click on <strong>ADD NEW</strong> for <strong>Email</strong>.</p>
+</li>
+<li>
+<p>Enter your personal email in the <strong>Email Address</strong> field and a <strong>Display name</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Go back to the previous <strong>Configure notifications and finalize alert</strong> tab.</p>
+</li>
+<li>
+<p>Click on <strong>Notification Channels</strong> again, then click on the <strong>Refresh icon</strong> to get the display name you mentioned in the previous step. Click <strong>Notification Channels</strong> again if needed.</p>
+</li>
+<li>
+<p>Now, select your <strong>Display name</strong> and click <strong>OK</strong>.</p>
+</li>
+<li>
+<p>Enter a name of your choice in the <strong>Alert policy name</strong> field.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Review the alert and click <strong>Create Policy</strong>.</p>
+</li>
+</ol>
+<p>Click <strong>Check my progress</strong> to verify the objective.
+<ql-activity-tracking step="2"><template shadowrootmode="open"><!---->
+      <ql-assessment aria-label=""><template shadowrootmode="open"><!---->
+      <div class="assessment-left">
+        <ql-assessment-status><template shadowrootmode="open"><!---->
+      <div class="status" role="progressbar" aria-live="assertive" status="uninitialized" tooltip="" aria-hidden="true" aria-valuenow="0" aria-label=""><!--?lit$238151522$--></div>
+    </template>
+        </ql-assessment-status>
+      </div>
+
+      <div class="assessment-right">
+        <div class="assessment-content">
+          <slot></slot>
+        </div>
+
+        <!--?lit$238151522$-->
+      </div>
+    </template>
+        <p>
+          <slot><!--?lit$238151522$-->I completed this step.</slot>
+        </p>
+
+        <ql-button aria-label="Check my progress" type="button" disabled=""><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="true">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button default " disabled="" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" disabled="">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+          <!--?lit$238151522$-->Check my progress
+        </ql-button>
+      </ql-assessment>
+    </template>
+Create alerting policies
+</ql-activity-tracking></p>
+<h2 id="step6">Task 4. Resource groups</h2>
+<ol>
+<li>In the left pane, click <strong>Groups</strong>.</li>
+<li>Click <strong>+ Create Group</strong>.</li>
+<li>Enter a name for the group. For example: <strong>VM instances</strong>
+</li>
+<li>In the <strong>Criteria</strong> section, type <strong>nginx</strong> in the <strong>Value</strong> field below Contains.</li>
+<li>Click <strong>DONE</strong>.</li>
+<li>Click <strong>CREATE</strong>.</li>
+<li>Review the dashboard Cloud Monitoring created for your group.</li>
+</ol>
+<p>Click <strong>Check my progress</strong> to verify the objective.
+<ql-activity-tracking step="3"><template shadowrootmode="open"><!---->
+      <ql-assessment aria-label=""><template shadowrootmode="open"><!---->
+      <div class="assessment-left">
+        <ql-assessment-status><template shadowrootmode="open"><!---->
+      <div class="status" role="progressbar" aria-live="assertive" status="uninitialized" tooltip="" aria-hidden="true" aria-valuenow="0" aria-label=""><!--?lit$238151522$--></div>
+    </template>
+        </ql-assessment-status>
+      </div>
+
+      <div class="assessment-right">
+        <div class="assessment-content">
+          <slot></slot>
+        </div>
+
+        <!--?lit$238151522$-->
+      </div>
+    </template>
+        <p>
+          <slot><!--?lit$238151522$-->I completed this step.</slot>
+        </p>
+
+        <ql-button aria-label="Check my progress" type="button" disabled=""><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="true">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button default " disabled="" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" disabled="">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+          <!--?lit$238151522$-->Check my progress
+        </ql-button>
+      </ql-assessment>
+    </template>
+Create resource groups
+</ql-activity-tracking></p>
+<h2 id="step7">Task 5. Uptime monitoring</h2>
+<p><ql-multiple-select-probe answerindices="[0,1,2,3,5]" optiontitles="[
+&quot;email&quot;,
+&quot;webhook&quot;,
+&quot;3rd party service&quot;,
+&quot;SMS&quot;,
+&quot;EC2 service&quot;,
+&quot;Pub/sub&quot;
+]" shuffle="" stem="Select all valid targets for Cloud Monitoring uptime alert notifications."><template shadowrootmode="open"><!---->
+      <ql-assessment aria-label=""><template shadowrootmode="open"><!---->
+      <div class="assessment-left">
+        <ql-assessment-status><template shadowrootmode="open"><!---->
+      <div class="status" role="progressbar" aria-live="assertive" status="uninitialized" tooltip="" aria-hidden="true" aria-valuenow="0" aria-label=""><!--?lit$238151522$--></div>
+    </template>
+        </ql-assessment-status>
+      </div>
+
+      <div class="assessment-right">
+        <div class="assessment-content">
+          <slot></slot>
+        </div>
+
+        <!--?lit$238151522$-->
+      </div>
+    </template>
+        <div class="item-container"> <!--?lit$238151522$-->
+      <ql-multiple-select-item><template shadowrootmode="open"><!---->
+      <fieldset>
+        <legend>
+          <ql-item-stem><template shadowrootmode="open"><!----> <slot></slot> </template><!--?lit$238151522$--><!--?lit$238151522$-->Select all valid targets for Cloud Monitoring uptime alert notifications.<!--?--></ql-item-stem>
+        </legend>
+        <!--?lit$238151522$--> <!--?lit$238151522$--><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         3rd party service 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         3rd party service 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->3rd party service<!--?-->
+      </ql-checkbox>
+    <!----><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         email 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         email 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->email<!--?-->
+      </ql-checkbox>
+    <!----><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         Pub/sub 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         Pub/sub 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->Pub/sub<!--?-->
+      </ql-checkbox>
+    <!----><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         webhook 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         webhook 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->webhook<!--?-->
+      </ql-checkbox>
+    <!----><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         EC2 service 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         EC2 service 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->EC2 service<!--?-->
+      </ql-checkbox>
+    <!----><!---->
+      <ql-checkbox class="option   "><template shadowrootmode="open"><!---->
+      <md-checkbox id="checkbox" name="" disabled="" data-aria-label="
+         SMS 
+      "><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <div class="container  disabled unselected prev-unselected ">
+        <input type="checkbox" id="input" aria-label="
+         SMS 
+      " disabled="">
+
+        <div class="outline"></div>
+        <div class="background"></div>
+        <md-focus-ring part="focus-ring" for="input" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+        <md-ripple for="input" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+        <svg class="icon" viewBox="0 0 18 18" aria-hidden="true">
+          <rect class="mark short"></rect>
+          <rect class="mark long"></rect>
+        </svg>
+      </div>
+    </template>
+      </md-checkbox>
+      <label class="checkbox-label" for="checkbox">
+        <slot></slot>
+      </label>
+    </template>
+        <!--?lit$238151522$--><!--?lit$238151522$-->SMS<!--?-->
+      </ql-checkbox>
+    <!---->
+      </fieldset>
+    </template>
+      </ql-multiple-select-item>
+     </div>
+
+        <!--?lit$238151522$-->
+      <ql-button aria-label="Submit" type="button" disabled=""><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="true">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button default " disabled="" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" disabled="">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+        <!--?lit$238151522$-->Submit
+      </ql-button>
+    
+      </ql-assessment>
+    </template>
+</ql-multiple-select-probe></p>
+<ol>
+<li>In the Monitoring tab, click on <strong>Uptime Checks</strong>.</li>
+<li>Click <strong>+ Create Uptime Check</strong>.</li>
+<li>Specify the following, and leave the remaining settings as their defaults:</li>
+</ol>
+<table>
+
+<tbody><tr>
+<th>Property</th>
+<th>Value (type value or select option as specified)</th>
+</tr>
+
+
+<tr>
+<td><strong>Protocol</strong></td>
+<td><strong>HTTP</strong></td>
+</tr>
+<tr>
+<td><strong>Resource Type</strong></td>
+<td><strong>Instance</strong></td>
+</tr>
+<tr>
+<td><strong>Applies To</strong></td>
+<td><strong>Group</strong></td>
+</tr>
+<tr>
+<td><strong>Group</strong></td>
+<td><em>Select your group</em></td>
+</tr>
+<tr>
+<td><strong>Check Frequency</strong></td>
+<td><strong>1 minute</strong></td>
+</tr>
+
+</tbody></table>
+<ol start="4">
+<li>
+<p>Click on&nbsp;<strong>Continue</strong>&nbsp;to leave the other details to default. In <strong>Alert &amp; Notification</strong> tab, select your Notification Channels from the dropdown.</p>
+</li>
+<li>
+<p>Click <strong>Continue</strong>.</p>
+</li>
+<li>
+<p>For <strong>Title</strong>, enter a name of your choice for the uptime check.</p>
+</li>
+<li>
+<p>Click&nbsp;<strong>Test</strong>&nbsp;to verify that your uptime check can connect to the resource.</p>
+</li>
+<li>
+<p>When you see a green check mark everything can connect. Click&nbsp;<strong>Create</strong>.</p>
+</li>
+</ol>
+<p>The uptime check you configured takes a while for it to become active.</p>
+<p>Click <strong>Check my progress</strong> to verify the objective.
+<ql-activity-tracking step="4"><template shadowrootmode="open"><!---->
+      <ql-assessment aria-label=""><template shadowrootmode="open"><!---->
+      <div class="assessment-left">
+        <ql-assessment-status><template shadowrootmode="open"><!---->
+      <div class="status" role="progressbar" aria-live="assertive" status="uninitialized" tooltip="" aria-hidden="true" aria-valuenow="0" aria-label=""><!--?lit$238151522$--></div>
+    </template>
+        </ql-assessment-status>
+      </div>
+
+      <div class="assessment-right">
+        <div class="assessment-content">
+          <slot></slot>
+        </div>
+
+        <!--?lit$238151522$-->
+      </div>
+    </template>
+        <p>
+          <slot><!--?lit$238151522$-->I completed this step.</slot>
+        </p>
+
+        <ql-button aria-label="Check my progress" type="button" disabled=""><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="true">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button default " disabled="" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" disabled="">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+          <!--?lit$238151522$-->Check my progress
+        </ql-button>
+      </ql-assessment>
+    </template>
+Create uptime check
+</ql-activity-tracking></p>
+<h2 id="step8">Task 6. Disable the alert</h2>
+<p>Disable the alert
+Alerting policies stay active for a while after a project is deleted, just in case it needs to be reinstalled. Since this is a lab, and you will not have access to this project again, remove the alerting policy you created.</p>
+<ol>
+<li>
+<p>Navigate to the <strong>Alerting</strong> section.</p>
+</li>
+<li>
+<p>Click view all <strong>Alert policies</strong>, on your <strong>Policies</strong> details page click on the <strong>Enabled</strong> toggle at the top of the page.</p>
+</li>
+<li>
+<p>You will be asked to confirm that you want to turn off the alerting policy - click <strong>Turn Off</strong>.</p>
+</li>
+</ol>
+<h2 id="step9">Task 7. Review</h2>
+<p>In this lab, you learned how to:</p>
+<ul>
+<li>Monitor your projects</li>
+<li>Create a Cloud Monitoring workspace</li>
+<li>Create alerts with multiple conditions</li>
+<li>Add charts to dashboards</li>
+<li>Create resource groups</li>
+<li>Create uptime checks for your services</li>
+</ul>
+<h2 id="step10">End your lab</h2>
+<p>When you have completed your lab, click <strong>End Lab</strong>. Google Cloud Skills Boost removes the resources you’ve used and cleans the account for you.</p>
+<p>You will be given an opportunity to rate the lab experience. Select the applicable number of stars, type a comment, and then click <strong>Submit</strong>.</p>
+<p>The number of stars indicates the following:</p>
+<ul>
+<li>1 star = Very dissatisfied</li>
+<li>2 stars = Dissatisfied</li>
+<li>3 stars = Neutral</li>
+<li>4 stars = Satisfied</li>
+<li>5 stars = Very satisfied</li>
+</ul>
+<p>You can close the dialog box if you don't want to provide feedback.</p>
+<p>For feedback, suggestions, or corrections, please use the <strong>Support</strong> tab.</p>
+
+<p>Copyright 2024 Google LLC All rights reserved. Google and the Google logo are trademarks of Google LLC. All other company and product names may be trademarks of the respective companies with which they are associated.</p>
+
+
+
+
+
+</div>
+</div>
+
+
+<div class="lab-content__end-lab-button js-end-lab-button-container hidden">
+<ql-lab-control-button class="js-end-lab-button" running=""><template shadowrootmode="open"><!---->
+      <ql-button type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button negative " data-aria-expanded="true" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" aria-expanded="true">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$--><slot></slot><!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+        <!--?lit$238151522$-->End Lab
+      </ql-button>
+    </template></ql-lab-control-button>
+</div>
+<!-- / TODO: Move recommendations into the end lab modal -->
+</div>
+</ql-drawer-content>
+<ql-drawer end="" id="lab-outline-drawer" open="" slot="drawer" width="240" aria-hidden="false" role="region" mode="side" style="width: 240px; visibility: visible;"><template shadowrootmode="open"><!---->
+      <!--?lit$238151522$-->
+      <slot></slot>
+    </template>
+<div aria-label="Lab Table of Contents" class="outline-container" id="js-outline-container" role="navigation">
+<ul class="lab-content__outline js-lab-content-outline">
+<div class="ql-label-small">Lab instructions and tasks</div>
+<li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step1">Overview</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step2">Objectives</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step3">Task 1. Create a Cloud Monitoring workspace</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step4">Task 2. Custom dashboards</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step5">Task 3. Alerting policies</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step6">Task 4. Resource groups</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step7">Task 5. Uptime monitoring</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step8">Task 6. Disable the alert</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step9">Task 7. Review</a></li><li><a href="https://www.cloudskillsboost.google/classrooms/26082/labs/223624#step10">End your lab</a></li>
+</ul>
+</div>
+</ql-drawer>
+</ql-drawer-container>
+</ql-drawer-content>
+</ql-drawer-container>
+
+
+
+</div>
+</main>
+
+<span class="hidden" id="flash-sibling-before"></span>
+<ql-snackbar aria-live="polite" role="alert"><template shadowrootmode="open"><!---->
+      <div class=" snackbar " style="left: 0px;">
+        <slot></slot>
+        <!--?lit$238151522$-->
+      <div aria-label="To access the notification, press Alt+G"></div>
+    
+      </div>
+    </template></ql-snackbar>
+
+<script data-glue-cookie-notification-bar-category="2A" src="./Resource Monitoring _ Google Cloud Skills Boost_files/cookienotificationbar.min.js"></script>
+
+
+
+<ql-dialog headline="Score Details" icon="task_alt" id="jupyter-feedback-modal" tabindex="-1" aria-hidden="true"><template shadowrootmode="open"><!---->
+      <div class=" dialog-wrapper ">
+        <ql-card elevation="3" role="dialog" aria-labelledby="title" aria-modal="true"><template shadowrootmode="open"><!---->
+      <div part="body" class="card   ">
+        <slot></slot>
+      </div>
+    </template>
+          <!--?lit$238151522$-->
+      <div part="header" class=" header centered ">
+        <!--?lit$238151522$--> <ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$-->task_alt</slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+        <h1 id="title"><!--?lit$238151522$--><!--?lit$238151522$-->Score Details<!--?--></h1>
+      </div>
+      <div class="body" part="body">
+        <slot></slot>
+      </div>
+      <div part="actions" class=" actions ">
+        <!--?lit$238151522$-->
+      <ql-button class="dismissal-button" label="OK" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-text-button class=" ql-button default " data-aria-label="OK" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$-->
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" aria-label="OK">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$-->OK<!--?--><!--?-->
+        </md-text-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+      </ql-button>
+    
+        <slot name="action"></slot>
+      </div>
+    
+        </ql-card>
+        <!--?lit$238151522$--> <div class=" overlay "></div>
+      </div>
+    </template>
+<iframe id="jupyter-feedback-frame" title="Jupyter Feedback" src="./Resource Monitoring _ Google Cloud Skills Boost_files/saved_resource(6).html"></iframe>
+</ql-dialog>
+
+<ql-dialog id="lab-notification-dialog" nodefaultaction="" nodefaultdismiss="" tabindex="-1" aria-hidden="true"><template shadowrootmode="open"><!---->
+      <div class=" dialog-wrapper ">
+        <ql-card elevation="3" role="dialog" aria-labelledby="title" aria-modal="true"><template shadowrootmode="open"><!---->
+      <div part="body" class="card   ">
+        <slot></slot>
+      </div>
+    </template>
+          <!--?lit$238151522$-->
+      <div part="header" class=" header ">
+        <!--?lit$238151522$-->
+        <h1 id="title"><!--?lit$238151522$--><!--?lit$238151522$--><!--?--></h1>
+      </div>
+      <div class="body" part="body">
+        <slot></slot>
+      </div>
+      <div part="actions" class="actions multiple">
+        <!--?lit$238151522$-->
+        <slot name="action"></slot>
+      </div>
+    
+        </ql-card>
+        <!--?lit$238151522$--> <div class=" overlay "></div>
+      </div>
+    </template>
+<img src="./Resource Monitoring _ Google Cloud Skills Boost_files/disable_lab-47cff1f6bc3610f58767251ff93c2f99cf4f9040.png">
+<p class="title ql-headline-4">This content is not currently available</p>
+<p class="description ql-body-1">We will notify you via email when it becomes available</p>
+<ql-button href="/focuses/223624/set_up_lab_forward_url?parent=classroom" id="lab-notification-close-button" label="No, thanks" slot="action" text="" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-text-button href="/focuses/223624/set_up_lab_forward_url?parent=classroom" class=" ql-button default " data-aria-label="No, thanks" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$-->
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="link" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="link" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><a id="link" class="button" aria-label="No, thanks" href="https://www.cloudskillsboost.google/focuses/223624/set_up_lab_forward_url?parent=classroom"><!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </a>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$-->No, thanks<!--?--><!--?-->
+        </md-text-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-button>
+<ql-button fill="" id="lab-notification-submit" label="Yes, notify me" slot="action" text="" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-filled-button class=" ql-button default " data-aria-label="Yes, notify me" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$--><md-elevation part="elevation" aria-hidden="true"><template shadowrootmode="open"><!----><span class="shadow"></span></template></md-elevation>
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" aria-label="Yes, notify me">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$-->Yes, notify me<!--?--><!--?-->
+        </md-filled-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-button>
+</ql-dialog>
+<ql-dialog id="lab-notification-subscribed-dialog" nodefaultaction="" nodefaultdismiss="" tabindex="-1" aria-hidden="true"><template shadowrootmode="open"><!---->
+      <div class=" dialog-wrapper ">
+        <ql-card elevation="3" role="dialog" aria-labelledby="title" aria-modal="true"><template shadowrootmode="open"><!---->
+      <div part="body" class="card   ">
+        <slot></slot>
+      </div>
+    </template>
+          <!--?lit$238151522$-->
+      <div part="header" class=" header ">
+        <!--?lit$238151522$-->
+        <h1 id="title"><!--?lit$238151522$--><!--?lit$238151522$--><!--?--></h1>
+      </div>
+      <div class="body" part="body">
+        <slot></slot>
+      </div>
+      <div part="actions" class="actions multiple">
+        <!--?lit$238151522$-->
+        <slot name="action"></slot>
+      </div>
+    
+        </ql-card>
+        <!--?lit$238151522$--> <div class=" overlay "></div>
+      </div>
+    </template>
+<img src="./Resource Monitoring _ Google Cloud Skills Boost_files/notifcation_subscribed-2b4f9e51439e1a107488ab58a6e13c3c62ef8855.png">
+<p class="title ql-headline-4">Great!</p>
+<p class="description ql-body-1">We will contact you via email if it becomes available</p>
+<ql-button href="/focuses/223624/set_up_lab_forward_url?parent=classroom" id="lab-notification-subscribed-close-button" label="Back to screen" slot="action" text="" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-text-button href="/focuses/223624/set_up_lab_forward_url?parent=classroom" class=" ql-button default " data-aria-label="Back to screen" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$-->
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="link" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="link" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><a id="link" class="button" aria-label="Back to screen" href="https://www.cloudskillsboost.google/focuses/223624/set_up_lab_forward_url?parent=classroom"><!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </a>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$-->Back to screen<!--?--><!--?-->
+        </md-text-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-button>
+</ql-dialog>
+
+<div class="modal fade" id="lab-details-modal">
+<div class="modal-container">
+<div class="modal-content mdl-shadow--24dp">
+<div class="modal-body">
+<p class="l-mbm">
+In this lab you learn how to use Cloud Monitoring to gain insight into applications that run on Google Cloud Platform.
+</p>
+<p class="small-label l-mbs">
+<strong>
+Duration:
+</strong>
+1m setup
+·
+60m access
+·
+30m completion
+</p>
+<p class="small-label l-mbs">
+<strong>AWS Region:</strong>
+[] <strong></strong>
+</p>
+<p class="small-label l-mbs">
+<span><strong>Levels: </strong>introductory</span>
+</p>
+<p class="small-label">
+<strong>
+Permalink:
+</strong>
+<a href="https://www.cloudskillsboost.google/catalog_lab/1785">https://www.cloudskillsboost.google/catalog_lab/1785</a>
+</p>
+</div>
+<div class="modal-actions">
+<a class="button button--text" data-dismiss="modal">
+Got It
+</a>
+</div>
+
+
+</div>
+</div>
+<iframe class="l-ie-iframe-fix" tabindex="-1" title="modal" src="./Resource Monitoring _ Google Cloud Skills Boost_files/saved_resource(7).html"></iframe>
+</div>
+<ql-dialog headline="How satisfied are you with this lab?&lt;span aria-hidden=&quot;true&quot;&gt;*&lt;/span&gt;" id="lab-review-dialog" tabindex="-1" aria-hidden="true"><template shadowrootmode="open"><!---->
+      <div class=" dialog-wrapper ">
+        <ql-card elevation="3" role="dialog" aria-labelledby="title" aria-modal="true"><template shadowrootmode="open"><!---->
+      <div part="body" class="card   ">
+        <slot></slot>
+      </div>
+    </template>
+          <!--?lit$238151522$-->
+      <div part="header" class=" header ">
+        <!--?lit$238151522$-->
+        <h1 id="title"><!--?lit$238151522$--><!--?lit$238151522$-->How satisfied are you with this lab?<span aria-hidden="true">*</span><!--?--></h1>
+      </div>
+      <div class="body" part="body">
+        <slot></slot>
+      </div>
+      <div part="actions" class="actions multiple">
+        <!--?lit$238151522$-->
+      <ql-button class="dismissal-button" label="Cancel" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-text-button class=" ql-button default " data-aria-busy="false" value="" data-aria-label="Cancel"><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$-->
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" aria-label="Cancel">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$-->Cancel<!--?--><!--?-->
+        </md-text-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+      </ql-button>
+    
+        <slot name="action"></slot>
+      </div>
+    
+        </ql-card>
+        <!--?lit$238151522$--> <div class=" overlay "></div>
+      </div>
+    </template>
+<form class="simple_form js-lab-review-form" id="new_lab_review" action="https://www.cloudskillsboost.google/lab_reviews" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓" autocomplete="off"><div aria-labelledby="lab-review-dialog" aria-required="true" aria-valuemax="5" aria-valuemin="0" aria-valuenow="0" class="rateit js-rateit" data-rateit-max="5" data-rateit-min="0" data-rateit-resetable="false" data-rateit-step="1" data-rateit-value="0" id="lab-review-rateit" role="slider" tabindex="0"><div class="rateit-reset" style="display: none;"></div><div class="rateit-range" style="width: 80px; height: 16px;"><div class="rateit-selected" style="height: 16px; width: 0px;"></div><div class="rateit-hover" style="height:16px"></div></div></div>
+<div class="l-mtm">
+
+<div class="control-group hidden lab_review_user_id"><div class="controls"><input class="hidden" autocomplete="off" type="hidden" value="41332617" name="lab_review[user_id]" id="lab_review_user_id"></div></div>
+<div class="control-group hidden lab_review_classroom_id"><div class="controls"><input class="hidden" autocomplete="off" type="hidden" value="26082" name="lab_review[classroom_id]" id="lab_review_classroom_id"></div></div>
+<div class="control-group hidden lab_review_lab_id"><div class="controls"><input class="hidden" autocomplete="off" type="hidden" value="1785" name="lab_review[lab_id]" id="lab_review_lab_id"></div></div>
+<div class="control-group hidden lab_review_focus_id"><div class="controls"><input class="hidden" autocomplete="off" type="hidden" value="223624" name="lab_review[focus_id]" id="lab_review_focus_id"></div></div>
+<div class="control-group hidden lab_review_rating"><div class="controls"><input class="hidden js-rating-input" autocomplete="off" type="hidden" name="lab_review[rating]" id="lab_review_rating"></div></div>
+<div class="control-group text optional lab_review_comment"><label class="text optional control-label" for="lab_review_comment">Additional Comments</label><div class="controls"><textarea class="text optional" name="lab_review[comment]" id="lab_review_comment"></textarea></div></div>
+</div>
+</form><ql-button disabled="" id="submit" label="Submit" slot="action" text="" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="true">
+        <!--?lit$238151522$-->
+        <md-text-button class=" ql-button default " disabled="" data-aria-label="Submit" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$-->
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" disabled="" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" disabled="" aria-label="Submit">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$-->Submit<!--?--><!--?-->
+        </md-text-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-button>
+</ql-dialog>
+
+<ql-dialog headline="Are you sure? You may not be able to restart the lab, and you&#39;ll need to start from the beginning if you do." icon="error_outline" id="js-lab-are-you-sure-dialog" tabindex="-1" aria-hidden="true"><template shadowrootmode="open"><!---->
+      <div class=" dialog-wrapper ">
+        <ql-card elevation="3" role="dialog" aria-labelledby="title" aria-modal="true"><template shadowrootmode="open"><!---->
+      <div part="body" class="card   ">
+        <slot></slot>
+      </div>
+    </template>
+          <!--?lit$238151522$-->
+      <div part="header" class=" header centered ">
+        <!--?lit$238151522$--> <ql-icon><template shadowrootmode="open"><!---->
+      <i class="google-material-icons" aria-hidden="true" style="font-size: inherit;">
+        <slot><!--?lit$238151522$-->error_outline</slot>
+      </i>
+      <!--?lit$238151522$--><!--?-->
+    </template></ql-icon>
+        <h1 id="title"><!--?lit$238151522$--><!--?lit$238151522$-->Are you sure? You may not be able to restart the lab, and you'll need to start from the beginning if you do.<!--?--></h1>
+      </div>
+      <div class="body" part="body">
+        <slot></slot>
+      </div>
+      <div part="actions" class="actions multiple">
+        <!--?lit$238151522$-->
+      <ql-button class="dismissal-button" label="Cancel" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-text-button class=" ql-button default " data-aria-busy="false" value="" data-aria-label="Cancel"><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$-->
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" aria-label="Cancel">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$-->Cancel<!--?--><!--?-->
+        </md-text-button>
+      </div>
+     <!--?lit$238151522$--> </template>
+      </ql-button>
+    
+        <slot name="action"></slot>
+      </div>
+    
+        </ql-card>
+        <!--?lit$238151522$--> <div class=" overlay "></div>
+      </div>
+    </template>
+<ql-button id="js-are-you-sure-button" label="End Lab" slot="action" text="" type="button"><template shadowrootmode="open"><!----> <!--?lit$238151522$-->
+      <div class="buttonContainer" aria-disabled="false">
+        <!--?lit$238151522$-->
+        <md-text-button class=" ql-button default " data-aria-label="End Lab" data-aria-busy="false" value=""><template shadowrootmode="open" shadowrootdelegatesfocus><!---->
+      <!--?lit$238151522$-->
+      <div class="background"></div>
+      <md-focus-ring part="focus-ring" for="button" aria-hidden="true"><template shadowrootmode="open"><!----></template></md-focus-ring>
+      <md-ripple part="ripple" for="button" aria-hidden="true"><template shadowrootmode="open"><!----><div class="surface   "></div></template></md-ripple>
+      <!--?lit$238151522$--><button id="button" class="button" aria-label="End Lab">
+      <!--?lit$238151522$-->
+      <span class="touch"></span>
+      <!--?lit$238151522$--><slot name="icon"></slot>
+      <span class="label"><slot></slot></span>
+      <!--?lit$238151522$-->
+    
+    </button>
+    </template>
+          <!--?lit$238151522$--><!--?lit$238151522$--> <!--?lit$238151522$--><!--?lit$238151522$-->End Lab<!--?--><!--?-->
+        </md-text-button>
+      </div>
+     <!--?lit$238151522$--> </template></ql-button>
+</ql-dialog>
+
+
+<script>
+  document.addEventListener("turbo:load", function () {
+    ql.initMaterialInputs();
+    initChosen();
+    initTabs();
+    ql.list.init();
+    ql.favoriting.init();
+    ql.header.myAccount.init();
+    initTooltips();
+    ql.autocomplete.init();
+    ql.modals.init();
+    ql.toggleButtons.init();
+    ql.analytics.init();
+    Turbo.session.drive = false;
+    ql.chat.init();
+  ql.jumpContent.init();
+  ql.labControlPanel.addRecaptchaErrorHandler();
+  initLabContent();
+  ql.labOutline.links.init();
+  initLabReviewModal();
+  initLabReviewTranslations( {"star_amount_1":"1 of 5 stars","star_amount_2":"2 of 5 stars","star_amount_3":"3 of 5 stars","star_amount_4":"4 of 5 stars","star_amount_5":"5 of 5 stars"} )
+  ql.labAssessment.init();
+  ql.labData.init();
+  initLabTranslations( {"are_you_sure":"Are you sure? You may not be able to restart the lab, and you'll need to start from the beginning if you do.","in_progress":"*In Progress*","ending":"*Ending*","starting":"*Starting, please wait*","end_concurrent_labs":"Sorry, you can only run one lab at a time. To start this lab, please confirm that you want all of your existing labs to end.","copied":"Copied","no_resource":"Error retrieving resource.","no_support":"No Support","mac_press":"Press ⌘-C to copy","thanks_review":"Thanks for reviewing this lab.","windows_press":"Press Ctrl-C to copy","days":"days"} );
+  ql.labRun.init();
+  ql.navPanel.init();
+  ql.navigation.init();
+  
+  }, {once: true});
+</script>
+
+
+
+
+<iframe data-product="web_widget" title="No content" role="presentation" tabindex="-1" allow="microphone *" aria-hidden="true" src="./Resource Monitoring _ Google Cloud Skills Boost_files/saved_resource(8).html" style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe><div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-oazim04nry7p" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./Resource Monitoring _ Google Cloud Skills Boost_files/anchor(2).html"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div><div style="visibility: hidden;"><div></div><div><style>
+        @-webkit-keyframes ww-13950e09-6989-4db9-933f-a5caf0679eed-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+        @keyframes ww-13950e09-6989-4db9-933f-a5caf0679eed-launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+
+        @keyframes ww-13950e09-6989-4db9-933f-a5caf0679eed-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        @-webkit-keyframes ww-13950e09-6989-4db9-933f-a5caf0679eed-widgetOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      </style><iframe title="Button to launch messaging window" id="launcher" style="color-scheme: light; height: 64px; width: 64px; position: fixed; bottom: 14px; right: 14px; border: 0px; margin-top: 0px; opacity: 0; box-shadow: rgba(23, 73, 77, 0.15) 0px 20px 30px; animation: 0.2s ease-in 0.5s 1 normal forwards running ww-13950e09-6989-4db9-933f-a5caf0679eed-widgetOnLoad; z-index: 999999; border-radius: 50%;" src="./Resource Monitoring _ Google Cloud Skills Boost_files/saved_resource(9).html"></iframe></div></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes" name="c-rx5u6n1rxnhd" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./Resource Monitoring _ Google Cloud Skills Boost_files/bframe.html" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
