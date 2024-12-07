@@ -12,3 +12,4 @@ When you complete this course, you can earn the badge displayed here! View all t
 ## What It Means to be AI-First
 - [Introduction](https://www.youtube.com/watch?v=znMRARqj-9E)
 - [What is ML?](https://www.youtube.com/watch?v=JAdiD7LJIL4)
+- [What kind of problems can it solve](https://www.youtube.com/watch?v=iecCMpVS2WQ)
