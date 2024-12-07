@@ -6,5 +6,9 @@ The course discusses the five phases of converting a candidate use case to be dr
 
 When you complete this course, you can earn the badge displayed here! View all the badges you have earned by visiting your profile page. Boost your cloud career by showing the world the skills you have developed!
 
+## Introduction to Course and Series
 - [Course series preview](https://www.youtube.com/watch?v=LUkbIo8Kvsk&t=8s)
--  
+- [Course introduction](https://www.youtube.com/watch?v=bRJGrq2MOsQ)  
+## What It Means to be AI-First
+- [Introduction](https://www.youtube.com/watch?v=znMRARqj-9E)
+- [What is ML?](https://www.youtube.com/watch?v=JAdiD7LJIL4)
