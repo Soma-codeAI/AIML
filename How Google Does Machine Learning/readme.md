@@ -13,3 +13,4 @@ When you complete this course, you can earn the badge displayed here! View all t
 - [Introduction](https://www.youtube.com/watch?v=znMRARqj-9E)
 - [What is ML?](https://www.youtube.com/watch?v=JAdiD7LJIL4)
 - [What kind of problems can it solve](https://www.youtube.com/watch?v=iecCMpVS2WQ)
+- [Lab intro: Framing a machine learning problem](https://www.youtube.com/watch?v=UM_T4PYXXnM)
