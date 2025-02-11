@@ -2,6 +2,7 @@
 
 - [Course Link](https://learn.deeplearning.ai/courses/automated-testing-llmops)
 - [CircleCI-Learning/LLMOps-Course](https://github.com/CircleCI-Learning/llmops-course)
+- [Confident Commit Podcast](https://podcasts.apple.com/us/podcast/the-confident-commit/id1565433605)
 
 - Continuous Integration for LLMOps 
 	- For rapid iteration (developer)
