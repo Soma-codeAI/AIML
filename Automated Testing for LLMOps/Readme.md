@@ -1,6 +1,7 @@
 # Automated Testing for LLMOps
 
 - [Course Link](https://learn.deeplearning.ai/courses/automated-testing-llmops)
+- [CircleCI-Learning/LLMOps-Course](https://github.com/CircleCI-Learning/llmops-course)
 
 - Continuous Integration for LLMOps 
 	- For rapid iteration (developer)
